@@ -212,6 +212,141 @@ transition: color 0.3s ease-out;
 }
 
 
+/* ==== LOADER LAYER ==== */
+
+.loader-layer {
+  position: absolute;
+  background:rgba(250,250,250,.8);
+  height:100%;
+  left: 0;
+  right: 0;
+  z-index:999;
+}
+
+.loader-box {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+      top: 27%;
+}
+.loader-box:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.play-logo {
+  position: absolute;
+  top: 28%;
+  left: 25%;
+  width: 50px;
+  opacity: .6;
+}
+
+.play-logo img {
+  width: 100%;
+}
+
+.circular {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@-webkit-keyframes color {
+  100%,
+  0% {
+    stroke: #56acf2;
+  }
+  40% {
+    stroke: #56acf2;
+  }
+  66% {
+    stroke: #56acf2;
+  }
+  80%,
+  90% {
+    stroke: #56acf2;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #56acf2;
+  }
+  40% {
+    stroke: #56acf2;
+  }
+  66% {
+    stroke: #56acf2;
+  }
+  80%,
+  90% {
+    stroke: #56acf2;
+  }
+}
+
+
+
+/*====================*/
 
 .login-holder .view-loader {
 	top:0;left:0;
