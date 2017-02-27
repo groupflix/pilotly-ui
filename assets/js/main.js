@@ -818,6 +818,7 @@ function adjustContentViewPadding(){
 
     //content view
     $('#content .pagecontent .action-row').css({'padding':'0px '+padding+'px'}).addClass(rowClass);
+    $('#content .pagecontent [class*="area"]').css({'padding':'0px '+padding+'px'}).addClass(rowClass);
     //$('#content .pagecontent ul.item-list').css({'padding':'0px '+padding+'px'}).addClass(rowClass);
     $('#content .pagecontent ul.item-list').addClass(rowClass);
 

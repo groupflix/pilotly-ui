@@ -86,6 +86,88 @@
                             </a>
         
                         </div>
+
+                        <div class="manager-dropdowns ml-15 inline-display projects-only">
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div>All Projects</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <li>
+                                            <a href="#">
+
+                                                Another Project
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Killision Course
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Homicide For The Holidays
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Projects
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                            <div class="menu-break"></div>
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div id="groupsDropdownTitle">Episode 101</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <!--<li>
+                                            <a href="#">
+
+                                               Episode 102
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               Episode 103
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Episode 103 Recut
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>-->
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Studies
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                     <!-- Branding end -->
 
@@ -101,53 +183,15 @@
                         <img class="brand" src="images/logo/logo_white_turq_200w.png">
                     </ul>
                      Left-side navigation end -->
-                     <div class="menu-section">
-                        <ul class="project-menu nav-center">
-
-                            <li id="projectDropDown"  class="dropdown project-list no-select">
-
-                                <a href class="dropdown-toggle" data-toggle="dropdown">
-                                    
-                                    <div>Versailles Series</div> <i class="fa fa-angle-down"></i>
-                                </a>
-
-                                <ul class="dropdown-menu animated littleFadeInDown" role="menu">
-
-                                    <li>
-                                        <a href="#">
-
-                                            Another Project
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Killision Course
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Homicide For The Holidays
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out"></i>Manage Projects
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-
-                        </ul>
-                     </div>
+                     <!--<div class="menu-section">
+                        
+                     </div>-->
 
 
                     <!-- Right-side navigation -->
-                    <div class="menu-section">
-                        <ul class="nav-right pull-right list-inline">
-                            <button class="btn-std success small-btn-text mr-15 waves-effect waves-teal" style="margin-top:6px">Create New Study</button>
+                    <div class="menu-section text-right" style='padding-right:2%'>
+                        <ul class="nav-right list-inline">
+                            <button class="btn-std success small-btn-text mr-15 waves-effect waves-teal" id="create-study" style="margin-top:6px">Create New Study</button>
 
                             <li id="alertsDropDown" class="dropdown notifications">
 
@@ -209,46 +253,40 @@
                                 </div>
 
                             </li>
-
-                            <li id="profileDropDown" class="dropdown nav-profile">
-
-                                <a href class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
-                                    <div>Paramount</div> <i class="fa fa-angle-down"></i>
-                                </a>
-
-                                <ul class="dropdown-menu animated littleFadeInDown" role="menu">
-
-                                    <li>
-                                        <a href="#">
-
-                                            <i class="fa fa-user"></i>Profile
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-cog"></i>Settings
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out"></i>Logout
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-    <!--
-                            <li class="toggle-right-sidebar">
-                                <a href="#">
-                                    <i class="fa fa-comments"></i>
-                                </a>
-                            </li>-->
                         </ul>
+
+                        <div id="profileDropDown" class="dropdown nav-profile ml-15">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
+                                <div>Paramount</div> <i class="fa fa-angle-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                <li>
+                                    <a href="#">
+
+                                        <i class="fa fa-user"></i>Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog"></i>Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i>Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
                     <!-- Right-side navigation end -->
                     </div>
 
@@ -267,12 +305,12 @@
             ================================================== -->
             <div class="secondary-nav">
 
-                <div class="sub-view-nav brand-horizontal-gradient">
+                <div id="subLayerNav" class="sub-view-nav brand-horizontal-gradient">
                     <div class="go-back">
                         <div class="back-arrow"></div>
-                        Go Back
+                        Menu
                     </div>
-                    <div class="view-heading">Edit survey
+                    <div id="subLayerTitle" class="view-heading">Edit Media
                     </div>
                 </div>
                 <!--<div class="go-back">
@@ -280,7 +318,7 @@
                     <i class="fa fa-home"></i>
                 </div>-->
                 
-                <div class="current-group">
+                <!--<div class="current-group">
                     <ul class="nav-left">
 
                             <li id="studiesDropDown" class="dropdown no-select">
@@ -316,30 +354,33 @@
                             </li>
 
                         </ul>
-                </div>
-
-                <!--<div class="current-group overview-button">
-                    Overview
                 </div>-->
+                
 
-                <ul class="group-sections">
-                    <li><div>Publish</div>
-                        <div class="hover-underline"></div>
-                    </li>
-                    <li><div>Videos / Images</div>
-                        <div class="hover-underline"></div>
-                    </li>
-                    <li><div>Surveys</div>
-                        <div class="hover-underline"></div>
-                    </li>
-                    <li class="selected"><div>Target Audiences</div>
-                        <div class="hover-underline"></div>
-                    </li>
-                    <li><div>Insights Dashboard</div>
-                        <div class="hover-underline"></div>
-                    </li>
-                </ul>
-
+                <div class="menu-section text-left">
+                    <ul class="group-sections ">
+                        <li id="publishSection"><div>Publish</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="dataSection"><div>Insights Dashboard</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div><div class="menu-section text-right">
+                    <ul class="group-sections">
+                        <li id="videoSection" class="selected" role="sub-layer"><div>Videos & Images</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="surveySection" role="sub-layer"><div>Surveys</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="segmentSection" role="sub-layer"><div>Target Audiences</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+               
 
             </div>
             <!--/ FOCUS GROUP NAV-->
