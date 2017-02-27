@@ -75,7 +75,7 @@ $(function() {
           defaultHeaderPosition = 'header-fixed',
           defaultNavbarPosition = 'aside-fixed',
           defaultRightbarVisibility = 'rightbar-hidden',
-          defaultAppClasses = 'scheme-default default-scheme-color secondary-nav-open header-fixed aside-fixed rightbar-hidden';
+          defaultAppClasses = 'scheme-default default-scheme-color header-fixed aside-fixed rightbar-hidden';
 
       $body.addClass(defaultAppClasses);
       $header.addClass(defaultHeaderScheme);
@@ -206,6 +206,23 @@ $(function() {
 
     init: function() {
 
+        //:NOTE:: ensure that the dropdowns disappears when the user mouse leaves the area
+
+        $('.dropdown').each(function(){
+            document.getElementById($(this).attr('id')).addEventListener('mouseleave', function(e){
+               //console.log('mouse left dropdow ' + e.target.id + ' hover : ' + $('#'+e.target.id + ' .dropdown-menu').is(':hover'))
+                
+               setTimeout(function(){ 
+                 if(!$('#'+e.target.id).is(':hover') && !$('#'+e.target.id + ' .dropdown-menu').is(':hover')){
+                    $('#'+e.target.id).removeClass('open');
+                 }
+                
+               },1000);
+
+            });
+
+
+        })
     }
 
 
@@ -232,7 +249,7 @@ $(function() {
 
     menu: function(){
       if( $dropdowns.length > 0 ) {
-
+        console.log('setup dropdowns');
         $dropdowns.addClass('dropdown');
 
         var $submenus = $dropdowns.find('ul >.dropdown');
@@ -244,7 +261,7 @@ $(function() {
           if ($app.hasClass('sidebar-sm') || $app.hasClass('sidebar-xs') || $app.hasClass('hz-menu')) {
             return false;
           }
-
+          console.log('open dropdown');
           var $this = $(this),
               $parent = $this.parent('li'),
               $openSubmenu = $('.submenu.open');
@@ -259,11 +276,13 @@ $(function() {
         });
 
         $dropdowns.on('mouseenter', function() {
+          
           $sidebar.addClass('dropdown-open');
           $controls.addClass('dropdown-open');
         });
 
         $dropdowns.on('mouseleave', function() {
+          console.log('mouse left dropdown');
           $sidebar.removeClass('dropdown-open');
           $controls.removeClass('dropdown-open');
         });
@@ -765,10 +784,10 @@ $(function() {
 		init: function(){
 
       var t = setTimeout( function(){
-
-        MINOVATE.documentOnReady.setSidebar();
+        
+        //MINOVATE.documentOnReady.setSidebar();
         MINOVATE.navbar.removeRipple();
-
+        adjustContentViewPadding();
 			}, 500 );
 
 		}
@@ -777,7 +796,38 @@ $(function() {
 
 
 
+function adjustContentViewPadding(){
+  
+    //:NOTE:: 1106 is max width of three items in the content item lists
+    //if()
+    var width = $('#content .pagecontent').width();
+    console.log('adjust content ' + width);
+    var padding = 0;
+    var rowClass= "";
 
+    if(width >= 1240){
+      padding = (width - 960)/2 
+      rowClass = "three-item-rows";
+      $('#content .pagecontent ul.item-list').removeClass('four-item-rows');
+    }else{ 
+       padding = (width - 824)/2;
+       rowClass = "three-item-rows";
+       $('#content .pagecontent ul.item-list').removeClass('four-item-rows');
+    }
+
+
+    //content view
+    $('#content .pagecontent .action-row').css({'padding':'0px '+padding+'px'}).addClass(rowClass);
+    //$('#content .pagecontent ul.item-list').css({'padding':'0px '+padding+'px'}).addClass(rowClass);
+    $('#content .pagecontent ul.item-list').addClass(rowClass);
+
+    //secondary nav
+    $('.secondary-nav .menu-section.text-left').css({'padding-left':padding+'px'});
+    $('.secondary-nav .menu-section.text-right').css({'padding-right':padding+'px'});
+
+    //top nav
+    
+}
 
 
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -794,6 +844,7 @@ $(function() {
       MINOVATE.tiles.init();
       MINOVATE.extra.init();
       MINOVATE.documentOnReady.setSidebar();
+      adjustContentViewPadding();
 		},
 
     // run on window scrolling

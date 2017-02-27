@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Dosis:300,700|Fira+Sans:300,400,500,700|Lato:300,400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400|Open+Sans:300,400,600,700|Lato:300,400&subset=latin,latin-ext);
 .display-inline{
   display:inline-block;
 }
@@ -2747,6 +2747,9 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
     
   z-index: 1;
   white-space: nowrap;
+
+  -transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
 }
 
 .appWrapper.header-fixed.secondary-nav-open #content {
@@ -2781,7 +2784,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
   left: 0;
   top: 0;
   right: 0;
-  height: 50px;
+  height: 58px;
 }
 
 
@@ -2912,7 +2915,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 #header .nav-center > li > a,
 #header .nav-left > li > a,
 .secondary-nav .nav-left > li > a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 42px;
   padding: 0 10px;
   display: inline-block;
@@ -2920,7 +2923,7 @@ html.boxed-layout .appWrapper.header-fixed.aside-static #header {
 }
 
  .secondary-nav .nav-left > li > a{
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 1);
 }
 
 #header .nav-right > li > a:hover,
@@ -6472,6 +6475,10 @@ check-toggler.checked:before,
   margin-top: 0px;
 }
 
+#header .dropdown.nav-profile > .dropdown-menu {
+  margin-top: 4px;
+}
+
 #header .dropdown.open > a {
   color: white;
 }
@@ -6555,11 +6562,12 @@ check-toggler.checked:before,
 }
 
 .dropdown-menu.panel .panel-heading {
-  background-color: #333;
+  background-color: #1c496d;
   border-radius: 0;
-  color: #95a2a9;
+  color: #eee;
   border: 0;
   font-weight: 300;
+  cursor:pointer;
 }
 
 .dropdown-menu.panel .panel-heading strong {
@@ -6594,7 +6602,7 @@ check-toggler.checked:before,
 .dropdown-menu.panel.with-arrow:after {
   height: 0;
   width: 0;
-  border-bottom: 9px solid #333;
+  border-bottom: 9px solid #1c496d;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
 }
@@ -15120,10 +15128,10 @@ body a {
   background-color: #d5a8ee !important;
 }
 
-.bg-green {
+/*.bg-green {
   background-color: #a2d200 !important;
   color: white !important;
-}
+}*/
 
 .bg-green.dk {
   background-color: #96c300 !important;
@@ -15551,17 +15559,17 @@ body a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-*[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) a:not(.ui-select-choices-row-inner):not(.event-remove):hover {
+/**[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) a:not(.ui-select-choices-row-inner):not(.event-remove):hover {
   color: white;
-}
+}*/
 
-*[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) .dropdown-menu > li > a {
+*[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) .dropdown-menu > li > a,.dropdown-menu>li>a:hover {
   color: #585858 !important;
 }
 
-*[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) .dropdown-menu > li > a:hover {
+/**[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) .dropdown-menu > li > a:hover {
   color: #262626 !important;
-}
+}*/
 
 *[class*='bg-']:not(.bg-default):not(.bg-white):not(.bg-tr-white) > .form-control.input-unstyled {
   color: rgba(255, 255, 255, 0.7);
