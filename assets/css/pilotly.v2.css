@@ -329,8 +329,16 @@ transition: color 0.3s ease-out;
   margin-bottom: 20px !important;
 }
 
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
 .mb-30 {
   margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
 }
 
 .pr-5 {
@@ -1382,7 +1390,65 @@ list-style: none;
       padding-left:15px;
     }
 
-  /* ====VIDEO CONTENT (upload) =====*/
+
+
+/* ==== MODAL EXTRAS =====*/
+
+.modal-dialog{
+  margin-top: 85px;
+  width: 570px;
+}
+
+.modal-content{
+  border-radius: 8px;
+}
+
+.modal-header .upper-right-close{
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+.modal-header {
+  padding: 30px 40px;
+  font-weight: 700;
+  text-align: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border:0;
+}
+
+.modal-body{
+  padding:0px 40px;
+}
+
+.modal-footer{
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding:30px 40px;
+}
+
+  .modal-header .modal-title{
+    font-weight: 700;
+  }
+
+
+.modal .form-group label span{
+  font-size:12px; font-weight:400;
+}
+
+.modal .form-group input{
+  width:93%;
+}
+
+
+/* ====VIDEO CONTENT (upload) =====*/
 
 .upload-dropzone{
   position:relative;
@@ -3129,7 +3195,7 @@ list-style: none;
         font-style: italic;
       }
 
-.pagecontent form[class^="metadata"] .form-group label{
+.pagecontent form[class^="metadata"] .form-group label, .modal .form-group label{
   display: block;
   font-size: 14px;
   color: #5a5a5a;
@@ -3148,12 +3214,12 @@ list-style: none;
  
 }
 
-.pagecontent form[class^="metadata"] .form-group input,.scene-area .scene-player-panel .form-group input{
+.pagecontent form[class^="metadata"] .form-group input,.modal .form-group input, .scene-area .scene-player-panel .form-group input{
   border: 1px solid #b3b2b2;
   height: 2rem;
 }
 
-.pagecontent form[class^="metadata"] .form-group textarea{
+.modal .form-group textarea, .pagecontent form[class^="metadata"] .form-group textarea{
   border: 1px solid #b3b2b2;
 }
 
