@@ -3382,11 +3382,18 @@ button.btn-std[disabled='disabled']{
         }
 
         li .bottom-area .chosen-single{
-          font-size:16px; font-weight:600;          line-height: 18px;
+          font-size:16px; font-weight:600; line-height: 18px;
           padding: 10px 12px;
           height: auto;
         }
 
+       li .bottom-area .chosen-container-single .chosen-single span{
+         margin-right:10px;
+       }
+
+       li .bottom-area .chosen-container-single .chosen-single div b{
+         background-position: 0 10px;
+       }
 /*==========================*/
 
   .pagecontent .edit-media{
