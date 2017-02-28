@@ -3232,7 +3232,162 @@ ul.side-subnav{
               }
 
         
+/* ==== GROUP SETTINGS =====*/
 
+/*:NOTE:: @EDGAR this is the basic css that should be used to maintain
+white space on sides of content view */
+.pagecontent > div{
+  max-width: 980px;
+  position: relative;
+    margin: 0 auto;
+}
+
+.smallest-text{
+  font-size:12px;
+}
+
+button.btn-std[disabled='disabled']{
+  cursor:not-allowed;
+  opacity: .3;
+}
+
+.publish-action{
+  background-color:rgb(254, 133, 0);
+  background:rgb(254, 133, 0);
+  font-size:18px;
+}
+
+.pagecontent .view-title{
+  font-weight:400;font-size:16px;
+}
+  .pagecontent .view-title h2{
+    font-weight:600;
+  
+  }
+
+.pagecontent .settings-row{
+   
+    font-size: 18px; font-weight: 600;text-align: center;
+    
+    /* border-top: 1px solid #d6d6d6; */
+    /* border-bottom: 1px solid #d4d4d4; */
+}
+
+.pagecontent .settings-row, .pagecontent .button-row{
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 69%;
+}
+  .pagecontent .settings-row .btd-std{
+    font-size:14px;
+  }
+
+  
+
+.group-settings-area .feature-sets-row{
+  position: relative;
+  width:100%;
+}
+
+  .group-settings-area .feature-sets-row ul.ps-list{
+    position: relative;
+    margin:0 auto;
+  }
+
+    .feature-sets-row ul.ps-list li{
+      display: inline-block;
+      width:205px;
+      margin-right:28px;
+
+      
+    }
+
+    /*.feature-sets-row ul.ps-list li:first-child{
+      display: inline-block;
+      width:205px;
+      margin-right:28px;
+      border-left: 1px solid #eee;
+      border-top: 1px solid #efefef;
+      border-radius: 6px;
+      box-shadow: 1px 2px 1px rgba(30,30,30,.13);
+      -webkit-box-shadow: 1px 2px 1px rgba(30,30,30,.13)
+      
+    }*/
+
+    .feature-sets-row ul.ps-list li:last-child{
+      margin:0;
+    }
+
+      .feature-sets-row ul.ps-list li .top-area{
+          width:100%;
+          max-height: 110px;
+          overflow:hidden;
+          text-align: center;
+          /*border:1px solid #dadada;*/
+          background: #00baa1;
+          /*border-bottom: 1px solid #dadada;*/
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px;
+          -webkit-border-top-left-radius: 6px;
+          -webkit-border-top-right-radius: 6px;
+
+          transition: all 250ms ease-out;
+          -webkit-transition: all 250ms ease-out;
+          filter: grayscale(100%);
+      }
+
+      /*.feature-sets-row ul.ps-list li:first-child .top-area{
+          width:100%;
+          max-height: 110px;
+          overflow:hidden;
+          text-align: center;
+          border:0;
+          border-bottom: 1px solid #dadada;
+
+      }*/
+
+      .feature-sets-row ul.ps-list li:hover .top-area{
+        filter: grayscale(0%);
+      }
+
+        ul.ps-list li .top-area img{
+          margin:-5.5% auto 0 auto;
+          width:64%;
+        }
+
+      .feature-sets-row ul.ps-list li .bottom-area{
+        width:100%;
+
+        padding:15px 0;
+        border-right:1px solid #dadada;
+        border-left:1px solid #dadada;
+        border-bottom:1px solid #dadada; 
+
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        -webkit-border-bottom-left-radius: 6px;
+        -webkit-border-bottom-right-radius: 6px;
+      }
+
+      /*.feature-sets-row ul.ps-list li:first-child .bottom-area{
+
+        border-right:0px solid #dadada;
+        border-left:0px solid #dadada;
+        border-bottom:0px solid #dadada; 
+
+      }*/
+
+        li .bottom-area .smallest-text{
+          cursor: default;
+        }
+
+        li .bottom-area .chosen-single{
+          font-size:16px; font-weight:600;          line-height: 18px;
+          padding: 10px 12px;
+          height: auto;
+        }
+
+/*==========================*/
 
   .pagecontent .edit-media{
      /*border: 1px solid #DEDEDE;*/
@@ -3573,10 +3728,11 @@ ul.side-subnav{
           width:100%;
           z-index: 0;
           transition: all 300ms ease-out;
-     -webkit-transition:  all 300ms ease-out;
+         -webkit-transition:  all 300ms ease-out;
+
           filter: grayscale(100%);
-              border-top-left-radius: 5px;
-                  border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
         }
         
           ul.item-list li:hover .top-area .epthumb img{
