@@ -460,10 +460,6 @@ transition: color 0.3s ease-out;
   margin-bottom: 15px !important;
 }
 
-.mb-20 {
-  margin-bottom: 20px !important;
-}
-
 .mb-25 {
   margin-bottom: 25px !important;
 }
@@ -1637,7 +1633,9 @@ ul.side-subnav{
 
 /* ====VIDEO CONTENT (upload) =====*/
 
-.upload-dropzone{
+
+
+/*.upload-dropzone{
   position:relative;
   width:100%;height:auto; min-height:250px;text-align:center;background:#eee;border:1px solid #A3AEB4;
 	cursor: pointer;;
@@ -1670,7 +1668,7 @@ ul.side-subnav{
 
 		.upload-dropzone.image-preview .instructions i{
       font-size:48px;
-    }
+    }*/
 
 .image-placeholder{
   position: relative;
@@ -3059,7 +3057,7 @@ ul.side-subnav{
   .pagecontent .action-row{
     position: relative;
     padding: 0 4%;
-    margin: 15px 0 0 0;
+    margin: 15px auto 0 auto;
   
     /*overflow:hidden;*/
   }
@@ -3086,9 +3084,14 @@ ul.side-subnav{
   }
 
   .pagecontent .detail-area{
-    min-height: 408px; 
+    margin:0 auto;
     padding:40px 50px;
+
+    transition: all 400ms ease-out;
+     -webkit-transition: all 400ms ease-out;
   }
+
+  
 
     .scene-area .scene-player-panel,.scene-area .scene-list-panel{
       position: relative;
@@ -3273,7 +3276,7 @@ button.btn-std[disabled='disabled']{
     /* border-bottom: 1px solid #d4d4d4; */
 }
 
-.pagecontent .settings-row, .pagecontent .button-row{
+.pagecontent .group-settings-area .settings-row, .pagecontent .group-settings-area .button-row{
     padding: 30px 0;
     margin: 0 auto;
     width: 69%;
@@ -3396,6 +3399,48 @@ button.btn-std[disabled='disabled']{
        }
 /*==========================*/
 
+
+/*===== UPLOAD MEDIA ======*/
+  .form-width-2{
+    width:20%;
+    vertical-align: middle;
+  }
+
+  .form-width-3{
+    width:33.1%;
+    vertical-align: middle;
+  }
+
+  .form-group.offOnTrans{
+    height: 0;
+    margin:0;
+    transition: all 200ms ease-out;
+     -webkit-transition: all 200ms ease-out;
+  }
+
+  .form-group.offOnTrans.on{
+    height:auto;
+  }
+
+    .form-group .name-upload{
+      display: inline-block; vertical-align: bottom;
+      width:67%;
+      margin-right:6%;
+    }
+
+    .form-group .upload-button{
+      display: inline-block; vertical-align: bottom;
+      width:28%;
+    }
+
+  .pagecontent .detail-area.image-type{
+    width:600px;
+  }
+
+  .pagecontent .detail-area.video-type{
+    width:550px;
+  }
+
   .pagecontent .edit-media{
      /*border: 1px solid #DEDEDE;*/
      border:1px solid #a9a9a9;
@@ -3485,7 +3530,7 @@ button.btn-std[disabled='disabled']{
     }
 
 .edit-media .instruction-area{
-  font-size:20px; font-weight: 600;
+  font-size:22px; font-weight: 600;
 }
 
   /*.edit-media .progress-area{
@@ -3499,12 +3544,16 @@ button.btn-std[disabled='disabled']{
 
   .edit-media .progress-area{
     display: inline-block; vertical-align: middle;
-    width:77%; height:16px;
+    width:51.25%; height:16px;
     border: 1px solid #9a9a9a;
     background: #fff;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
     text-align: left;
+  }
+
+  .detail-area.video-type .progress-area{
+    width:46.25%;
   }
 
     .edit-media .progress-area .progress-bar{
@@ -3513,12 +3562,12 @@ button.btn-std[disabled='disabled']{
       width:20%; height:108%;
       background: #00baa1;
 
-      border-radius: 9px;
-    -webkit-border-radius: 9px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-   -webkit-border-top-right-radius: 8px;
-   -webkit-border-bottom-right-radius: 8px;
+      border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   -webkit-border-bottom-right-radius: 7px;
 
       z-index:0;
     }
@@ -3578,10 +3627,13 @@ button.btn-std[disabled='disabled']{
   }
 
   .edit-media .metadata-form .image-meta-option{
-    position: absolute;
-    width:99%; left:0;
+     height:0;
+     margin:0;
   }
 
+  .edit-media .metadata-form .image-meta-option.on{
+    height: initial;
+  }
 
 .pagecontent ul.item-list{
   position: relative;

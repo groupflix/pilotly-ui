@@ -305,7 +305,7 @@
             ================================================== -->
             <div class="secondary-nav">
 
-                <div id="subLayerNav" class="sub-view-nav brand-horizontal-gradient">
+                <div id="subLayerNav" class="sub-view-nav brand-horizontal-gradient open">
                     <div class="go-back">
                         <div class="back-arrow"></div>
                         Menu
@@ -429,10 +429,11 @@
                                 </div>
                             </div>
                             
-                            <!-- VIDEO EDIT -->
+                            <!-- VIDEO EDIT (DEPRECATED IN FAVOR OF NEXT DETAIL AREA)
                             <div class="detail-area edit-media relwidth" style="display: none">
                                 <div class="instruction-area text-center mb-30">
-                                    <div class="mb-15">Please provide some details while your upload completes</div>
+                                    <div class="mb-10">Uploading Your Video</div>
+                                    <div class="view-title">Please provide some details while you're waiting</div>
                                     <div>
                                         <div class="progress-area">
                                             <div class="progress-bar"></div>
@@ -476,11 +477,73 @@
                                     <button class="btn-std success waves-effect waves-teal">Save</button>
                                 </div>
                             </div>
+                            -->
+
+
+                             <!-- VIDEO EDIT -->
+                            <div class="detail-area edit-media video-type relwidth">
+                                <div class="instruction-area text-center mb-30">
+                                    <div class="mb-10">Uploading Your Video</div>
+                                    <div class="view-title">Please provide some details while you're waiting</div>
+                                    <div>
+                                        <div class="progress-area">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="progress-status">20% Uploaded (<span>10 mins</span>)</div>
+                                    </div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-30">
+                                    <div class="row mb-0">
+                                        <div class="form-group text-center mb-40">
+                                            <label>Type of Video</label>
+                                            <div class="btn-group">
+                                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Episode</label>
+                                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Film</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Promo</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Trailer</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Name of Video</label>
+                                            <input type="text" maxlength="50" style="width:93%"/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="name-upload">
+                                                <label>Caption File</label>
+                                                <input type="text" maxlength="50" style="width:90%" disabled="disabled"/>
+                                            </div>
+                                            <div class="upload-button">
+                                                <button class="btn-std light-color-btn waves-effect waves-dark-blue no-bg small-action-btn">Add Captions</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>MPAA Rating</label>
+                                            <div class="btn-group">
+                                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">TV-G</label>
+                                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">TV-PG</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">TV-14</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">TV-MA</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Not Rated</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <div class="button-row text-right">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Cancel</button>
+                                    <button class="btn-std success waves-effect waves-teal">Save</button>
+                                </div>
+                            </div>
 
                              <!-- IMAGE EDIT -->
-                             <div class="detail-area edit-media relwidth" style="display: none">
+                             <div class="detail-area edit-media image-type relwidth" style="display: none">
                                 <div class="instruction-area text-center mb-30">
-                                    <div class="mb-15">Please provide some details while your upload completes</div>
+                                    <div class="mb-10">Uploading Your Image</div>
+                                    <div class="view-title">Please provide some details while you're waiting</div>
                                     <div>
                                         <div class="progress-area">
                                             <div class="progress-bar"></div>
@@ -491,12 +554,97 @@
                                 
                                 <form onsubmit="return false" class="metadata-form mb-30">
                                     <div class="row mb-0">
-                                        <div class="col-md-7 pl-0">
+                                        <!-- PRIMARY METADATA (top row)-->
+                                        <div class="form-group mb-20 text-center">
+                                        
+                                            <label>What is this an image of?</label>
+                                            <div class="btn-group">
+                                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Character(s)</label>
+                                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Artwork</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Scene</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Other</label>
+                                            </div>
+                    
+                                        </div>
+
+                                        <div class="form-group mb-20">
+                                            <label>Image Name</label>
+                                            <input type="text" maxlength="50" style="width:93%"/>
+                                        </div>
+
+                                        <!-- CHARACTER METADATA -->
+                                        <div id="characterMetadata" class="image-meta-option offOnTrans">
                                             <div class="form-group mb-20">
-                                                <label>Title</label>
-                                                <input type="text" maxlength="50" style="width:81%;"/>
+                                                <label>Actor Name</label>
+                                                <input type="text" maxlength="50" style="width:93%;"/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="display-inline left-col">
+                                                    <label>Gender of character</label>
+                                                    <div class="btn-group">
+                                                        <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Male</label>
+                                                        <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Female</label>
+                                                        <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Other</label>
+                                                    </div>
+                                                </div><div class="display-inline right-col" style="margin-left:3.3%">
+                                                <label>What is dipicted?</label>
+                                                    <div class="btn-group">
+                                                        <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Individual</label>
+                                                        <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Relationship</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- SCENE METADATA -->
+                                        <div id="sceneMetadata" class="image-meta-option offOnTrans">
+                                            <div class="form-group mb-20">
+
+                                                <label>Short description <span>(180 characters max)</span></label>
+                                                <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself a note what this image is if you like">
+                                                </textarea>
+
                                             </div>
                                             <div class="form-group">
+           
+                                                <label>Enter characters that are in the scene</span></label>
+                                                <div class="relwidth">
+                                                    <select multiple="true" tabindex="-1" class="chosen-select single-line">
+                                                        <option value="AK">Soojung</option>
+                                                        <option value="HI">Howie</option>
+                                                        <option value="CA">Freddie</option>
+                                                        <option value="NV">Edgar</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>   
+                                        </div>
+
+                                        <!-- ARTWORK/OTHER METADATA -->
+                                        <div id="otherMetadata" class="image-meta-option offOnTrans on">
+                                            <div class="form-group">
+                                                <label>Short description <span>(180 characters max)</span></label>
+                                                <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself a note what this image is if you like">
+                                                </textarea>
+                                            </div>
+
+                                        </div>
+
+                                         <!--<div class="form-group mb-20">
+                                             <label>What is dipicted?</label>
+                                                <div class="btn-group">
+                                                    <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Individual</label>
+                                                    <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Relationship</label>
+                                                </div>
+                                         </div>-->
+
+
+                                        <!-- STYLES BELOW DEPRECATED IN FAVOR OF THE ABOVE -->
+                                        <!-- PRIMARY METADATA (top row)
+                                        <div class="form-group mb-40" style="display: none;">
+                                            
+                                            <div class="display-inline left-col">
                                                 <label>What is this an image of?</label>
                                                 <div class="btn-group">
                                                     <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Character</label>
@@ -504,41 +652,70 @@
                                                     <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Scene</label>
                                                     <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Other</label>
                                                 </div>
+                                            </div><div class="display-inline right-col">
+                                                <label>Image Name</label>
+                                                <input type="text" maxlength="50" style="width:91%"/>
                                             </div>
-            
-
+                    
                                         </div>
+-->
+                    
+                                        <!-- CHARACTER METADATA
+                                        <div class="form-group offOnTrans off">
+                                            <div class="display-inline form-width-3">
+                                                <label>Actor Name</label>
+                                                <input type="text" maxlength="50" style="width:80%;"/>
+                                            </div>
 
-                                        <div class="col-md-5 pr-0">
-                                            <div class="image-meta-option offOnTrans" id="sceneMetaData">
-                                                <div class="form-group">
-                                                    <label>Describe the scene</label>
-                                                    <textarea row="4" maxlength="180"></textarea>
+                                            <div class="display-inline form-width-3 ml-10">
+                                                <label>Gender of character</label>
+                                                <div class="btn-group">
+                                                    <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Male</label>
+                                                    <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Female</label>
+                                                    <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Other</label>
                                                 </div>
                                             </div>
-                                            <div class="image-meta-option offOnTrans on" id="sceneMetaData">
-                                                <div class="form-group mb-20">
-                                                    <label>Actor Name</label>
-                                                    <input type="text" maxlength="50" style="width:90%"/>
+
+                                            <div class="display-inline form-width-3 ml-10">
+                                                <label>What is dipicted?</label>
+                                                <div class="btn-group">
+                                                    <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Individual</label>
+                                                    <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Relationship</label>
                                                 </div>
-                                               <!-- <div class="form-group">
-                                                    <label>Select Scenes Character Appears In</label>
-                                                    
-                                                    <div class="relwidth">
-                                                        <select multiple="true" tabindex="-1" class="chosen-select single-line">
-                                                            <option value="AK">Alaska</option>
-                                                            <option value="HI">Hawaii</option>
-                                                            <option value="CA">California</option>
-                                                            <option value="NV">Nevada</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="WA">Washington</option>
-                                                        </select>
-
-                                                    </div>
-
-                                                </div>-->
                                             </div>
-                                        </div>
+                                        </div> -->
+
+                                        <!-- ARTWORK / OTHER METADATA 
+                                        <div class="form-group offOnTrans">
+                                            <div>
+                                                <label>Short description <span>(180 characters max)</span></label>
+                                                <input type="text" maxlength="180" style="width:95.5%;"/>
+                                            </div>
+
+                                            
+                                        </div>-->
+
+                                        <!-- SCENE METADATA 
+                                        <div class="form-group offOnTrans">
+                                            <div class="display-inline left-col">
+
+                                                <label>Short description <span>(180 characters max)</span></label>
+                                                <input type="text" maxlength="180" style="width:86%;"/>
+
+                                            </div><div class="display-inline right-col">
+           
+                                                <label>Enter characters that are in the scene</span></label>
+                                                <div class="relwidth">
+                                                    <select multiple="true" tabindex="-1" class="chosen-select single-line">
+                                                        <option value="AK">Soojung</option>
+                                                        <option value="HI">Howie</option>
+                                                        <option value="CA">Freddie</option>
+                                                        <option value="NV">Edgar</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>   
+                                        </div>-->
 
                                     </div>
                                 </form>
@@ -762,7 +939,7 @@
             </section>
             <!--/ CONTENT -->
 
-        <div class="modal in" role="dialog" style="display: block;background:rgba(0,0,0,.8)"><div class="modal-dialog">
+        <div class="modal in" role="dialog" style="display: none;background:rgba(0,0,0,.8)"><div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Create New Viewer Study</h4>
@@ -869,6 +1046,8 @@
         ============== Page Specific Scripts ===============
         ================================================ -->
         <script>
+
+        $('body').addClass('secondary-nav-open');
              //:NOTE:: required code for the custom radio/checkboxes field
   $('.toggle-class').on('click', function(){
     var element = $(this),
