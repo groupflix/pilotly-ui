@@ -1523,7 +1523,8 @@ list-style: none;
 
 
 
-/* ==== MODAL EXTRAS =====*/
+/*====== ADDITIONAL MODALS css=========*/
+/*=====================================*/
 
 .modal-dialog{
   margin-top: 85px;
@@ -1558,6 +1559,10 @@ list-style: none;
   padding:0px 40px;
 }
 
+.no-footer .modal-body{
+ padding:0px 40px 30px 40px;
+}
+
 .modal-footer{
   background-color: #f8f8f8;
   border-bottom-left-radius: 7px;
@@ -1579,6 +1584,94 @@ list-style: none;
 }
 
 
+.radio-row{
+  margin-bottom: 15px;
+}
+
+.radio-row:last-child{
+  margin-bottom: 0;
+}
+
+.btn-group .radio-row .radio-details{
+  display: inline-block;
+  vertical-align: middle;
+  width: 65%;
+  font-size: 12px;
+  text-align: justify;
+}
+
+/* choose an image */
+.image-library-mask{
+  position: relative;
+  width:100%; height:220px;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 4px;
+  background: #e7edef;
+}
+
+  .image-library-mask ul.image-library-holder{
+    position: relative;
+    width: 100%;
+    margin:0;padding: 0;
+  }
+
+    ul.image-library-holder li{
+      display: inline-block;
+      vertical-align: middle;
+      width:135px; height:130px;
+
+      margin-right:10px;
+      margin-bottom:15px;
+      text-align: center;
+      /*border: 1px solid #b3b2b2;*/
+     /*border-top: 1px solid #efefef;
+     border-left: 1px solid #eee;
+     box-shadow: 1px 2px 1px rgba(30,30,30,.15);
+     -webkit-box-shadow: 1px 2px 1px rgba(30,30,30,.15);*/
+
+     transition: all 200ms ease-out;
+     -webkit-transition: all 200ms ease-out;
+
+      cursor: pointer;
+      overflow: hidden;
+    }
+      
+
+    ul.image-library-holder > li:hover{
+      transform: translate3d(0px,-1px,0px);
+     -webkit-transform: translate3d(0px,-1px,0px);
+    }
+    ul.image-library-holder li:nth-child(3n){
+      margin-right:0;
+    }
+
+      ul.image-library-holder li img{
+        position: relative;
+        margin: 0 auto;
+        max-height:100%;
+        /*height:100%; min-width:100%;*/
+      }
+
+      ul.image-library-holder li .image-holder{
+        height:108px;line-height: 108px;
+        background: #ddd;
+        margin-bottom:5px;
+        overflow: hidden;
+      }
+
+      ul.image-library-holder li .image-label{
+        text-align: left;
+        font-size:12px;
+        overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+      }
+        ul.image-library-holder li .image-label i{
+          font-size:14px;
+          margin-right:10px;
+        }
 /* ==== INSTANT INSIGHTS LAYOUT =====*/
 
 ul.side-subnav{
@@ -3035,8 +3128,24 @@ ul.side-subnav{
 
 
 
+
+
+
 /*====== Panel Creation V2 css=========*/
 /*=====================================*/
+
+
+/*modal*/
+.create-survey .btn-group label{
+  display: inline-block !important;
+  vertical-align: middle;
+
+  width:30%;
+  margin-right:4%;
+}
+
+
+
 .warning-color{
   color: #fe8500;
 }
@@ -3448,12 +3557,17 @@ button.btn-std[disabled='disabled']{
     -webkit-border-radius: 8px;
   }
 
-  .pagecontent .upload-media{
+  .pagecontent .upload-media, .modal .upload-media{
      width:100%; 
      background:rgba(206, 220, 232, 0.2); color: #353535; font-weight:400;
      border: 1px dashed #CCCCCC;
-     border-radius:3px;
+     border-radius:6px;
      cursor: pointer;
+  }
+
+  .modal .upload-media{
+    text-align: center;
+    padding:15px 0;
   }
 
      .pagecontent .action-area .main-instruct{
@@ -3461,7 +3575,7 @@ button.btn-std[disabled='disabled']{
        /*font-weight: 600;*/
      }
 
-     .pagecontent .detail-area .main-instruct{
+     .pagecontent .detail-area .main-instruct,.modal .upload-media .main-instruct{
        font-size:16px;
      }
 
@@ -3469,7 +3583,7 @@ button.btn-std[disabled='disabled']{
        font-size:16px;
      }
 
-      .pagecontent .detail-area .sub-instruct{
+      .pagecontent .detail-area .sub-instruct,.modal .upload-media .sub-instruct{
        font-size:12px;
      }
 
@@ -3487,7 +3601,7 @@ button.btn-std[disabled='disabled']{
      
     }
 
-    .pagecontent .detail-area .upload-icon{
+    .pagecontent .detail-area .upload-icon,.modal .upload-media .upload-icon{
       position: relative;
       display: inline-block;
       width:70px;
@@ -3502,13 +3616,13 @@ button.btn-std[disabled='disabled']{
     }
 
 
-     .pagecontent .action-area .upload-icon i,.pagecontent .detail-area .upload-icon i{
+     .pagecontent .action-area .upload-icon i,.pagecontent .detail-area .upload-icon i,.modal .upload-media .upload-icon i{
         color:#00baa1;
         font-size: 4em;
          margin-top: 22%;
       }
 
-      .pagecontent .detail-area .upload-icon i{
+      .pagecontent .detail-area .upload-icon i, .modal .upload-media .upload-icon i{
         font-size:2.4em;
         margin-top:22%;
       }
