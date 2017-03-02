@@ -1,0 +1,861 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Minovate - Admin Dashboard</title>
+        <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+        <!-- ============================================
+        ================= Stylesheets ===================
+        ============================================= -->
+        <!-- vendor css files -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">  <!--http://git.blivesta.com/animsition/ -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/materialize.css">
+
+        
+
+        <!-- project main css files -->
+        <link rel="stylesheet" href="assets/css/main.v2.css">
+        <link rel="stylesheet" href="assets/css/pilotly.v2.css">
+        <!--/ stylesheets -->
+
+
+        <!-- ==========================================
+        ================= Fonts ===================
+        =========================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+        <!--/ fonts -->
+
+
+
+        <!-- ==========================================
+        ================= Modernizr ===================
+        =========================================== -->
+        <script src="assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--/ modernizr -->
+
+
+    </head>
+
+
+
+
+
+    <body class="appWrapper">
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <!-- ====================================================
+        ================= Application Content ===================
+        ===================================================== -->
+        <div id="wrap" class="animsition">
+
+            <!-- ===============================================
+            ================= HEADER Content ===================
+            ================================================ -->
+            <section class="bg-displayblue" id="header">
+                <header>
+
+                    <!-- Branding -->
+                    <div class="menu-section">
+                        <div class="branding">
+                            <a class="brand" href="index.html">
+                                <img src="images/logo/logo-all-white.png">
+                            </a>
+        
+                        </div>
+
+                        <div class="manager-dropdowns ml-15 inline-display">
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div>Versailles Series</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <li>
+                                            <a href="#">
+
+                                                Another Project
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Killision Course
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Homicide For The Holidays
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Projects
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                            <div class="menu-break"></div>
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div>Episode 101</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <li>
+                                            <a href="#">
+
+                                               Episode 102
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               Episode 103
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Episode 103 Recut
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Studies
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Branding end -->
+
+
+
+                    <!-- Left-side navigation 
+                    <ul class="nav-left pull-left list-unstyled list-inline">
+                        <li class="sidebar-collapse divided-right">
+                            <a href="#" class="collapse-sidebar">
+                                <i class="fa fa-outdent"></i>
+                            </a>
+                        </li>
+                        <img class="brand" src="images/logo/logo_white_turq_200w.png">
+                    </ul>
+                     Left-side navigation end -->
+                     <!--<div class="menu-section">
+                        
+                     </div>-->
+
+
+                    <!-- Right-side navigation -->
+                    <div class="menu-section text-right" style='padding-right:2%'>
+                        <ul class="nav-right list-inline">
+                            <button class="btn-std success small-btn-text mr-15 waves-effect waves-teal" style="margin-top:6px">Create New Study</button>
+
+                            <li id="alertsDropDown" class="dropdown notifications">
+
+                                <a href class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="badge bg-lightred">3</span>
+                                </a>
+
+                                <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInDown">
+
+                                    <div class="panel-heading">
+                                        You have <strong>3</strong> notifications
+                                    </div>
+
+                                    <ul class="list-group">
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-danger">
+                                                    <i class="fa fa-ban"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">User Imrich cancelled account</span>
+                                                    <small class="text-muted">6 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-primary">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">New user registered</span>
+                                                    <small class="text-muted">12 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-greensea">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">User Robert locked account</span>
+                                                    <small class="text-muted">18 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="panel-footer">
+                                        <a href="#">Show all notifications <i class="fa fa-angle-right pull-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                        </ul>
+
+                        <div id="profileDropDown" class="dropdown nav-profile ml-15">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
+                                <div>Paramount</div> <i class="fa fa-angle-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                <li>
+                                    <a href="#">
+
+                                        <i class="fa fa-user"></i>Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog"></i>Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i>Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    <!-- Right-side navigation end -->
+                    </div>
+
+
+                </header>
+
+            </section>
+            <!--/ HEADER Content  -->
+
+
+
+
+
+            <!-- =================================================
+            ================= FOCUS GROUP NAV  ===================
+            ================================================== -->
+            <div class="secondary-nav">
+
+                <div id="subLayerNav" class="sub-view-nav brand-horizontal-gradient open">
+                    <div class="go-back">
+                        <div class="back-arrow"></div>
+                        Study Setup
+                    </div>
+                    <div id="subLayerTitle" class="view-heading">Publish Group
+                    </div>
+                </div>
+             
+
+                <div class="menu-section text-left">
+                    <ul class="group-sections ">
+                        <li id="publishSection"><div>Publish</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="dataSection"><div>Insights Dashboard</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div><div class="menu-section text-right">
+                    <ul class="group-sections">
+                        <li id="mediaSection" class="selected" role="sub-layer"><div>Videos & Images</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="surveySection" role="sub-layer"><div>Surveys</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="segmentSection" role="sub-layer"><div>Target Audiences</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+               
+
+            </div>
+            <!--/ FOCUS GROUP NAV-->
+
+
+
+
+            <!-- ====================================================
+            ================= CONTENT ===============================
+            ===================================================== -->
+            <section class="content" id="content">
+                <div class="side-nav">
+                </div>
+
+                <div class="page content-view">
+
+                    <!-- page content -->
+                    <div class="pagecontent">
+
+                        <ul class="step-tracker">
+                            <li class="indicator on">
+                                1 <div class="step-label"><span>Copy</span></div>
+                            </li><li class="connector"><div class="highlight"></div>
+                            </li><li class="indicator">
+                                2 <div class="step-label"><span>Artwork</span></div>
+                            </li><li class="connector"><div class="highlight"></div>
+                            </li><li class="indicator">
+                                3 <div class="step-label"><span>Security</span></div>
+                            </li><li class="connector"><div class="highlight"></div>
+                            </li><li class="indicator">
+                                4 <div class="step-label"><span>Test</span></div>
+                            </li><li class="connector"><div class="highlight"></div>
+                            </li><li class="indicator">
+                                5 <div class="step-label"><span>Publish</span></div>
+                            </li>
+
+                        </ul>
+
+                        <div class="action-row">
+                            <div id="videoUpload" class="action-area upload-media relwidth" style="display: none">
+                                <div class="instruction-area text-center">
+                                    <div class="upload-icon"><i class="fa fa-upload"></i></div>
+                                    <div class="mb-10 main-instruct">Drag & drop a video or image file here to upload</div>
+                                    <div class="sub-instruct">Or click to browse your files  (max upload size 5GB)</div>
+                                </div>
+                            </div>
+                          
+
+
+                             <!-- Step 1 -->
+                            <div class="publish-area video-type relwidth" style="display: none;">
+                                <div class="mb-30 text-center instruction-area">
+                                    <div>Activation Copy</div>
+                                    <div class="view-title">Set the title and welcome message viewers will initially see</div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-30">
+                                    <div class="row mb-0">
+                                        
+                                        <div class="form-group">
+                                            <label>Name of study <span>(visible to user)</span></label>
+                                            <input type="text" maxlength="50" style="width:93%"/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Welcome message <span>(200 characters max)</span></label>
+                                            <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself a note what this image is if you like">
+                                            </textarea>
+                                        </div>
+
+                                        
+                                    </div>
+                                </form>
+                                <div class="button-row text-right">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                    <button class="btn-std success waves-effect waves-teal">Save & Continue</button>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Step 2 -->
+                            <div class="publish-area wider relwidth" style="display: none">
+                                <div class="mb-40 text-center instruction-area">
+                                    <div>Study Artwork</div>
+                                    <div class="view-title">Get users excited with nice images on your welcome screen</div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-30">
+                                    <div class="row mb-0">
+                                        
+                                        <div class="form-group col-md-4">
+                                            <div class="upload-media complete mb-10">
+                                                <div class="image-uploading">
+                                                    <!-- put loader here with no pilotly logo in the middle -->
+                                                </div>
+                                                <div class="image-uploaded">
+                                                    <img src="images/luke.jpg">
+                                                    <div class="edit-button">
+                                                        <button class="btn-std small-action-btn light-color-btn waves-effect no-bg">Change Image</button>
+                                                    </div>
+                                                </div>
+                                                <div class="image-placeholder">
+                                                    <i class="fa fa-image"></i>
+                                                    <div class="upload-instruction">
+                                                        Click Here to Upload
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-label">Desktop Background<br><span>ideal size 1920x1080</span></div>
+                                        </div>
+                                        
+                                       <div class="form-group col-md-4">
+                                            <div class="upload-media mb-10">
+                                                <div class="image-uploading">
+                                                    <!-- put loader here with no pilotly logo in the middle -->
+                                                </div>
+                                                <div class="image-uploaded">
+                                                    <img src="images/luke.jpg">
+                                                    <div class="edit-button">
+                                                        <button class="btn-std small-action-btn light-color-btn waves-effect no-bg">Change Image</button>
+                                                    </div>
+                                                </div>
+                                                <div class="image-placeholder">
+                                                    <i class="fa fa-image"></i>
+                                                    <div class="upload-instruction">
+                                                        Click Here to Upload
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-label">Mobile Background<br><span>ideal size 400x740</span></div>
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <div class="upload-media mb-10">
+                                                <div class="image-uploading">
+                                                    <!-- put loader here with no pilotly logo in the middle -->
+                                                </div>
+                                                <div class="image-uploaded">
+                                                    <img src="images/luke.jpg">
+                                                    <div class="edit-button">
+                                                        <button class="btn-std small-action-btn light-color-btn waves-effect no-bg">Change Image</button>
+                                                    </div>
+                                                </div>
+                                                <div class="image-placeholder">
+                                                    <i class="fa fa-image"></i>
+                                                    <div class="upload-instruction">
+                                                        Click Here to Upload
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="upload-label">Portait Poster<br><span>ideal size 300x740</span></div>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                                <div class="button-row text-right pl-15 pr-15">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                    <button class="btn-std success waves-effect waves-teal">Save & Continue</button>
+                                </div>
+                            </div>
+
+
+
+
+                             <!-- Step 3 -->
+                            <div class="publish-area wider relwidth" style="display: none;">
+                                <div class="mb-30 text-center instruction-area">
+                                    <div class="mb-5">Security Settings</div>
+                                    <div class="view-title">Choose a protection level, higher security will deter some viewers for joining</div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-40">
+                                    <div class="row mb-0">
+                                        
+                                        <div class="radio-group selected">
+                                            <div class="radio-bg"><div class="security-color-1"></div><i class="fa fa-check-circle-o"></i></div>
+                                            <div class="left-space-holder"></div>
+                                            <div class="radio-label">Standard</div>
+                                            <div class="radio-description">
+                                                <ul class="feature-list">
+                                                    <li><i class="fa fa-circle"></i>Stream encryption to secure your video file</li>
+                                                    <li><i class="fa fa-circle"></i>Verify viewers are not creative professionals</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="radio-group">
+                                            <div class="radio-bg"><div class="security-color-2"></div><i class="fa fa-check-circle-o"></i></div>
+                                            <div class="left-space-holder"></div>
+                                            <div class="radio-label">Standard Plus</div>
+                                            <div class="radio-description">
+                                                <ul class="feature-list">
+                                                    <li><i class="fa fa-circle"></i>Federal piracy warning prompt before screening</li>
+                                                    <li><i class="fa fa-circle"></i>No ability for viewers to share study sign up url</li>
+                                                    <li><i class="fa fa-circle"></i>All standard security features</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="radio-group">
+                                            <div class="radio-bg"><div class="security-color-3"></div><i class="fa fa-check-circle-o"></i></div>
+                                            <div class="left-space-holder"></div>
+                                            <div class="radio-label">Advanced</div>
+                                            <div class="radio-description">
+                                                <ul class="feature-list">
+                                                    <li><i class="fa fa-circle"></i>Only allow viewing from devices with web cameras</li>
+                                                    <li><i class="fa fa-circle"></i>Prevent viewers from screen recording content</li>
+                                                    <li><i class="fa fa-circle"></i>All standard plus security features</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                </form>
+                                <div class="button-row text-right">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                    <button class="btn-std success waves-effect waves-teal">Save & Continue</button>
+                                </div>
+                            </div>
+
+                            
+                            <!-- Step 4 -->
+                            <div class="publish-area wider relwidth" style="display: none;">
+                                <div class="mb-30 text-center instruction-area">
+                                    <div class="mb-5">Test Your Study</div>
+                                    <div class="view-title">Before going live, let's make sure everything is working as intended</div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-40">
+                                    <div class="row mb-0">
+                                        
+                                        <div class="form-group mb-30">
+                                            <label>Preview Url <span>(click url to copy to clipboard)</span></label>
+                                            <div>
+                                                <div class="field-execute">
+                                                    <div class="copy-instruction waves-effect">Click to Copy Url</div>
+                                                    <input type="text" maxlength="50" value="https://www.pilot.ly/app/?cta=1&ap=1&gid=6783dc3c519ec1e72991081b&sec=1"/>
+                                                </div>
+                                                <button class="btn-std success waves-effect waves-teal">Preview Now</button>
+                                            </div>
+                                        </div>
+                                        <div><!-- add complete to radio-group when a test is complete-->
+                                            <div class="radio-group no-hover" style="border-bottom:1px solid #a9a9a9;">
+                                               
+                                                <div class="left-space-holder"><i class="fa fa-circle-o"></i><i class="fa fa-check-circle-o"></i></div>
+                                                <div class="radio-label">Completion</div>
+                                                <div class="radio-description">
+                                                    <ul class="feature-list">
+                                                        <li>Please go through your entire video survey experience to proof your question set</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="radio-group no-hover">
+                                               
+                                                <div class="left-space-holder"><i class="fa fa-circle-o"></i><i class="fa fa-check-circle-o"></i></div>
+                                                <div class="radio-label">Screen Out</div>
+                                                <div class="radio-description">
+                                                    <ul class="feature-list">
+                                                        <li>You have one or more questions in your survey that can terminate viewers. 
+                                                        Please answer a question incorrectly to test viewer screen out functionality.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </form><!-- NOTE: this turns back on once the testing is complete and the preview now button turns to light-color-btn class so its less prominant -->
+                                <div class="button-row text-right off">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                    <button class="btn-std success waves-effect waves-teal">Continue</button>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Step 5 -->
+                            <div class="publish-area relwidth" style="display: block;">
+                                <div class="mb-30 text-center instruction-area">
+                                    <div class="mb-5">Time to Go Live</div>
+                                    <div class="view-title">You're ready to get feedback from the world</div>
+                                </div>
+                                
+                                <form onsubmit="return false" class="metadata-form mb-40">
+                                    <div class="row mb-0">
+                                        
+                                        <div class="form-group mb-30 text-center">
+                                            <label>When do you want your group to go live?</label>
+                                            <div class="btn-group">
+                                                <label class="wide btn btn-default toggle-class active" data-toggle="active" data-type="radio">Now</label>
+                                                <label class="wide btn btn-default toggle-class " data-toggle="active" data-type="radio">Later</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="field-options slim">
+                                            <div class="form-group selected">
+                                                <label>Schedule start date</label>
+                                                <input type="datetime" class="text-center" style="width:92%"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Final url <span>(active once you publish)</span></label>
+                                                <div class="field-execute" style="width:100%">
+                                                    <div class="copy-instruction waves-effect">Click to Copy Url</div>
+                                                    <input type="text" maxlength="50" value="https://www.pilot.ly/app/?cta=1&ap=1&gid=6783dc3c519ec1e72991081b&sec=1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <div class="button-row text-center slim">
+                                    <button class="btn-std publish-action waves-effect waves-light" style="width:100%;">Publish</button>
+                                </div>
+                            </div>
+
+                             
+
+
+
+                </div>
+
+            </section>
+            <!--/ CONTENT -->
+
+        <div class="modal in" role="dialog" style="display: none;background:rgba(0,0,0,.8)"><div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create New Viewer Study</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-sm-6 control-label">Name of Study</label>
+                         <div class="col-sm-12 mb-20">
+                            <input type="text" placeholder="Title">
+                        </div>
+                        <div class="left-col">
+                            <label class="col-sm-6 control-label">Number of Completes</label>
+                            <div class="col-sm-12 mb-20">
+                                <input type="text" placeholder="Enter survey name">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <label class="col-sm-6 control-label">Length of Study</label>
+                            <div class="col-sm-12 mb-20">
+                                <input type="text" placeholder="Enter survey name">
+                            </div>
+                        </div>
+                        
+                        <!--<label class="col-sm-6 control-label">Notes (200 char max)</label>
+                        <div class="col-sm-12 mb-20">
+                            <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself some notes here if needed">
+                            </textarea>
+                        </div>-->
+
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="text-right">
+                        <div role="cancel" type="button" class="btn-std light-color-btn waves-effect waves-dark-light">Cancel</div>
+                        <div role="confirm" type="button" class="btn-std success waves-effect waves-teal">Save and Continue</div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+
+        </div>
+        <!--/ Application Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ============================================
+        ============== Vendor JavaScripts ===============
+        ============================================= -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="assets/js/vendor/materialize/materialize.js"></script>
+
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script src="assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+        <script src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+        <script src="assets/js/vendor/screenfull/screenfull.min.js"></script>
+
+        <script src="assets/js/vendor/parsley/parsley.min.js"></script>
+
+        <script src="assets/js/vendor/filestyle/bootstrap-filestyle.min.js"></script>
+
+        <script src="assets/js/vendor/form-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+        <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+        <!--/ vendor javascripts -->
+
+
+
+
+        <!-- ============================================
+        ============== Custom JavaScripts ===============
+        ============================================= -->
+        <script src="assets/js/main.js"></script>
+        <!--/ custom javascripts -->
+
+
+
+
+
+
+        <!-- ===============================================
+        ============== Page Specific Scripts ===============
+        ================================================ -->
+        <script>
+
+        $('body').addClass('secondary-nav-open');
+             //:NOTE:: required code for the custom radio/checkboxes field
+  $('.toggle-class').on('click', function(){
+    var element = $(this),
+        className = element.data('toggle'),
+        type = element.data('type');
+
+    if (type === 'radio') {
+      element.parent().find('.'+className).removeClass(className);
+    }
+
+    if (element.hasClass(className)) {
+      element.removeClass(className);
+    } else {
+      element.addClass(className);
+    }
+  });
+
+  //:NOTE:: code for subnav demo
+  $('.group-sections li').each(function() {
+
+        document.getElementById($(this).attr('id')).addEventListener('click', function(e){
+
+                $('.group-sections li').each(function() {
+                    $(this).removeClass('selected');
+                });
+
+                document.getElementById(e.currentTarget.id).className = "selected";
+
+                switch(e.currentTarget.id){
+                    case('mediaSection'):
+                      $('#subLayerTitle').html('Edit Media')
+                    break;
+                    case('surveySection'):
+                      $('#subLayerTitle').html('Edit Survey')
+                    break;
+                    case('segmentSection'):
+                      $('#subLayerTitle').html('Edit Segmentation')
+                    break;
+                }
+                // if(e.currentTarget.getAttribute('role') == 'sub-layer'){
+                //     $('#subLayerNav').addClass('open');
+                        
+                // }
+        });
+  });
+
+  document.querySelector('#subLayerNav .go-back').addEventListener('click', function(e){
+        $('#subLayerNav').removeClass('open');
+  });
+
+    //:NOTE:: require code for the select dropdown styling
+  $('.chosen-select').each(function() {
+    var element = $(this);
+    element.on('chosen:ready', function(e, chosen) {
+      var width = element.css("width");
+      var placeholder = (element.attr('placeholder')) ? element.attr('placeholder') : "Select Options";
+      if(element.hasClass('single-line')){
+         element.next().addClass('single-line')
+      }
+      element.next().find('.chosen-choices').addClass('form-control');
+      element.next().css("width", "100%")
+      //element.next().find('.search-field input').attr('value',placeholder);
+    }).chosen();
+  });
+        </script>
+        <!--/ Page Specific Scripts -->
+
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+    </body>
+</html>
