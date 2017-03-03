@@ -2634,7 +2634,7 @@ ul.side-subnav{
 
 .pageheader h2 > span {
     display: inline-block;
-    color: #4a555b;
+    color: #535a5a;
     /*font-size: 32px;*/
     font-weight: 300;
     margin-top: 0px;
@@ -3171,7 +3171,7 @@ ul.side-subnav{
     /*overflow:hidden;*/
   }
 
-  .pagecontent .action-area,.pagecontent .publish-area,.pagecontent .detail-area,.pagecontent .scene-area{
+  .pagecontent .segment-area, .pagecontent .action-area,.pagecontent .publish-area,.pagecontent .detail-area,.pagecontent .scene-area{
     position:relative;
 
     min-height: 250px; min-width: 500px; height: auto;
@@ -3192,12 +3192,24 @@ ul.side-subnav{
     padding:0;
   }
 
-  .pagecontent .detail-area,.pagecontent .publish-area{
+  .pagecontent .detail-area,.pagecontent .publish-area,.pagecontent .segment-area{
     margin:0 auto;
     padding:40px 50px;
 
     transition: all 400ms ease-out;
      -webkit-transition: all 400ms ease-out;
+  }
+
+  .pagecontent .detail-area.image-type,.pagecontent .publish-area,.pagecontent .segment-area{
+    width:600px;
+  }
+
+  .pagecontent .publish-area.wider{
+     width:700px;
+  }
+
+  .pagecontent .detail-area.video-type{
+    width:550px;
   }
 
   
@@ -3355,7 +3367,7 @@ white space on sides of content view */
 }
 
 .smallest-text{
-  font-size:12px;
+  font-size:12px !important;
 }
 
 button.btn-std[disabled='disabled']{
@@ -3946,6 +3958,11 @@ button.btn-std[disabled='disabled']{
     vertical-align: middle;
   }
 
+  .form-width-4{
+    width:40%;
+    vertical-align: middle;
+  }
+
   .form-group.offOnTrans{
     height: 0;
     margin:0;
@@ -3968,17 +3985,7 @@ button.btn-std[disabled='disabled']{
       width:28%;
     }
 
-  .pagecontent .detail-area.image-type,.pagecontent .publish-area{
-    width:600px;
-  }
-
-  .pagecontent .publish-area.wider{
-     width:700px;
-  }
-
-  .pagecontent .detail-area.video-type{
-    width:550px;
-  }
+  
 
   .pagecontent .edit-media{
      /*border: 1px solid #DEDEDE;*/
@@ -4527,18 +4534,27 @@ button.btn-std[disabled='disabled']{
      }
 
     .panel .panel-heading .panel-title > a{
-      font-size: 18px; font-family:'Gotham';
+      font-size: 18px;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -khtml-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+
+      background-color: #f5f5f5;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+    }
+
+    .panel .panel-heading .panel-title > a.collapsed{
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
     }
 
     .panel-title a .section-title{
       display:inline-block;
-      width:40%; font-weight:300; color:#4a555b;
+      width:40%; font-weight:600; color:#535a5a;
       vertical-align: middle;
       cursor: pointer;
     }

@@ -1,0 +1,293 @@
+/* lines 3174  to 3213 were also updated in pilotly v2 css
+there were also general changes to accordian affecting survey
+creation as well, to fit new UI  */
+/*==== TARGET AUDIENCE SEGMENT =====*/
+
+.panel-body input{
+font-weight: 600;
+}
+
+.panel-body .form-group.nowrap{
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.segment-area .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    white-space: normal;
+}
+
+
+.panel-title a .button-area .help-icon{
+        
+    display:inline-block;font-size:25px; color:#555;
+    width:28px; height: 100%;
+    vertical-align: middle;
+    
+}
+
+.section-title .attribute-label{
+
+    display:inline-block;vertical-align: middle;
+    font-size:16px; font-weight: 400;
+    margin-left: 6px;
+    margin-top: -2px;
+
+}
+
+
+/* little update to the radio button boxes */
+.btn-group label:first-child{
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+
+.btn-group label:last-child{
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+/*=========================================*/
+
+.panel-body .form-group{
+    position: relative;
+}
+
+.panel-body .form-group .range-note{
+    position: absolute;
+    left:1%;
+    top:95%;
+    white-space: nowrap;
+
+    transition: all 350ms ease-out;
+    -webkit-transition: all 350ms ease-out;
+}
+
+.panel-body .quota-form{
+    height: 0;
+    padding-top:0;
+     margin-top:0;
+    opacity: .4;
+    transition: all 550ms ease-out;
+    -webkit-transition: all 550ms ease-out;
+    overflow: hidden;
+}
+
+.panel-body .quota-form.open{
+    height:inherit;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    opacity: 1;
+}
+
+    .panel-body .quota-form .quota-title{
+        margin: 10px 0;
+        font-size:12px; font-weight: 600;
+    }
+
+.panel-body .range-field-break{
+    display: inline-block;vertical-align: middle;
+    padding: 0 18px 0 0%;
+    font-size: 26px;
+}
+
+    .panel-body .quota-form ul.quota-settings{
+        margin:0;
+        width:100%;
+    }
+    
+
+        .panel-body .quota-form ul.quota-settings li{
+            display: block;
+            position: relative;
+            padding:15px 0;
+            border-bottom:1px solid #eee;
+
+            transition: all 400ms ease-out;
+            -webkit-transition: all 400ms ease-out;
+        }
+
+        .panel-body .quota-form ul.quota-settings li:nth-last-child(2){
+            border-bottom:0;
+        }
+
+            ul.quota-settings li .remove-button{
+                position: absolute;
+                top:29%; right:5%;
+                color:rgba(230, 35, 37,.7);
+                font-size:29px;
+                opacity: 0;
+                transition: all 400ms ease-out;
+                -webkit-transition: all 400ms ease-out;
+                cursor: pointer;
+            }
+
+            ul.quota-settings li:hover .remove-button{
+                opacity: 1;
+            }
+
+            ul.quota-settings li:first-child:hover .remove-button{
+                opacity: 0;
+                pointer-events: none;
+            }
+        
+       .panel-body .quota-form ul.quota-settings li.add-setting,.panel-group .create-category{
+            color:#b8c1c1;
+            text-align: center;
+            font-weight: 600;
+            border: 1px dashed #00b6cb;
+            padding: 25px;
+            transition: all 300ms ease-out;
+            cursor: pointer;
+
+            border-radius:6px;
+        }
+
+            .panel-body .quota-form ul.quota-settings li.add-setting:hover,.panel-group .create-category:hover{
+                color: #00b6cb;
+            }
+
+            .panel-body .quota-form ul.quota-settings li.add-setting i,.panel-group .create-category i{
+                font-size: 24px;
+                margin-top: -2px;
+                
+                color: #00b6cb;
+                vertical-align: middle;
+            }
+
+.panel-group .create-category{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    padding: 15px;
+}      
+
+/* new toggle switch css (by illYcut using illjs) */
+.illjs-toggle-switch{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    min-width:80px;
+    min-height:28px;
+
+    font-size:14px; font-weight: 600;   
+
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+
+    overflow: hidden;
+    transition: all 550ms ease-out;
+    -webkit-transition: all 550ms ease-out;
+   
+    box-shadow:         inset 0 0 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+
+     cursor: pointer;
+}
+
+.illjs-toggle-switch.default-bg-grey{
+    background: #b8c1c1;
+}
+
+.illjs-toggle-switch.toggled-on.default-bg-grey{
+    background: #5ce4cb;
+}
+
+.illjs-toggle-switch .switch-labels,.illjs-toggle-switch .switch-track{
+    position: absolute;
+    width:100%;height: 100%;
+    z-index:0;
+}
+
+    .illjs-toggle-switch .switch-labels .off-label,.illjs-toggle-switch .switch-labels .on-label{
+       display: inline-block;
+       vertical-align: middle; 
+       width:49.9%; 
+       text-align: center; color:#fefefe;line-height:26px;
+
+
+       transition-delay: 450ms;
+        transition: opacity 400ms ease-out;
+        -webkit-transition: opacity 400ms ease-out;
+    }
+
+    .illjs-toggle-switch:not([class='toggled-on']) .switch-labels .off-label{
+        opacity:1;
+    }
+
+    .illjs-toggle-switch:not([class='toggled-on']) .switch-labels .on-label,.illjs-toggle-switch.toggled-on .switch-labels .off-label{
+        opacity:0;
+    }
+
+    .illjs-toggle-switch.toggled-on .switch-labels .on-label{
+        opacity:1;
+    }
+
+
+.illjs-toggle-switch .switch-track{
+   z-index:100;
+}
+
+    .illjs-toggle-switch .switch-track .switch-knob{
+        position: relative;
+        height: 96%;
+        top: 1.5%;
+        width: 48%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transition-duration: 425ms;
+        -webkit-transition-duration: 425ms;
+        transition-property: all;
+       
+        transform: translate3d(111%,0%,0);
+        -webkit-transform: translate3d(111%,0%,0);
+
+        box-shadow: -2px 1px 2px rgba(30,30,30,.2);
+
+        cursor: pointer;
+    }
+
+    .illjs-toggle-switch.toggled-on .switch-track .switch-knob{
+        
+         transform: translate3d(0%,0%,0);
+        -webkit-transform: translate3d(0%,0%,0);
+
+        box-shadow: 2px 1px 2px rgba(30,30,30,.2);
+    }
+
+    .illjs-toggle-switch .knob-teal{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08a598+0,09b7a0+60,11a995+100 */
+        background: #08a598; /* Old browsers */
+        background: -moz-linear-gradient(left,  #08a598 0%, #09b7a0 60%, #11a995 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #08a598 0%,#09b7a0 60%,#11a995 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #08a598 0%,#09b7a0 60%,#11a995 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08a598', endColorstr='#11a995',GradientType=1 ); /* IE6-9 */
+
+    }
+
+    .illjs-toggle-switch .knob-teal{
+        background: #08a598; /* Old browsers */
+        background: linear-gradient(to right,  #09b7a0 0%,#00baa1 60%,#00baa1 100%);
+    }
+    .illjs-toggle-switch:hover .knob-teal{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08a598+0,09b7a0+60,11a995+100 */
+        
+        background: -moz-linear-gradient(left,  #08a598 0%, #09b7a0 60%, #11a995 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #08a598 0%,#09b7a0 60%,#11a995 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #08a598 0%,#09b7a0 60%,#11a995 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08a598', endColorstr='#11a995',GradientType=1 ); /* IE6-9 */
+
+    }
+
+/* END OF toggle switch css (by illYcut using illjs) */

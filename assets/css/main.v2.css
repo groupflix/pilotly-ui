@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:400|Open+Sans:300,400,600,700|Lato:300,400&subset=latin,latin-ext);
 .display-inline{
-  display:inline-block;
+  display:inline-block !important;
 }
 
 .page {
@@ -5985,6 +5985,7 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 
 .panel-group .panel .panel-heading {
   padding: 0;
+      background-color: initial;
 }
 
 .panel {
@@ -5994,7 +5995,10 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 }
 
 .panel .panel-heading {
-  border-radius: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
 }
 
 .panel .panel-heading .panel-title > a {
@@ -6281,7 +6285,8 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 }
 
 .panel-group .panel {
-  border-radius: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
 }
 
 .panel-group .panel.panel-transparent + .panel.panel-transparent {

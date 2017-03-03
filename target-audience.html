@@ -1,0 +1,925 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Minovate - Admin Dashboard</title>
+        <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+        <!-- ============================================
+        ================= Stylesheets ===================
+        ============================================= -->
+        <!-- vendor css files -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">  <!--http://git.blivesta.com/animsition/ -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/materialize.css">
+
+        
+
+        <!-- project main css files -->
+        <link rel="stylesheet" href="assets/css/main.v2.css">
+        <link rel="stylesheet" href="assets/css/pilotly.v2.css">
+        <link rel="stylesheet" href="assets/css/targetaudience.css">
+        <!--/ stylesheets -->
+
+
+        <!-- ==========================================
+        ================= Fonts ===================
+        =========================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+        <!--/ fonts -->
+
+
+
+        <!-- ==========================================
+        ================= Modernizr ===================
+        =========================================== -->
+        <script src="assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--/ modernizr -->
+
+
+    </head>
+
+
+
+
+
+    <body class="appWrapper">
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <!-- ====================================================
+        ================= Application Content ===================
+        ===================================================== -->
+        <div id="wrap" class="animsition">
+
+            <!-- ===============================================
+            ================= HEADER Content ===================
+            ================================================ -->
+            <section class="bg-displayblue" id="header">
+                <header>
+
+                    <!-- Branding -->
+                    <div class="menu-section">
+                        <div class="branding">
+                            <a class="brand" href="index.html">
+                                <img src="images/logo/logo-all-white.png">
+                            </a>
+        
+                        </div>
+
+                        <div class="manager-dropdowns ml-15 inline-display">
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div>Versailles Series</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <li>
+                                            <a href="#">
+
+                                                Another Project
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Killision Course
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Homicide For The Holidays
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Projects
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                            <div class="menu-break"></div>
+                            <ul class="project-menu nav-center">
+
+                                <li id="projectDropDown"  class="dropdown project-list no-select">
+
+                                    <a href class="dropdown-toggle" data-toggle="dropdown">
+                                        
+                                        <div>Episode 101</div> <i class="fa fa-angle-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                        <li>
+                                            <a href="#">
+
+                                               Episode 102
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               Episode 103
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Episode 103 Recut
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i>Manage Studies
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Branding end -->
+
+
+
+                    <!-- Left-side navigation 
+                    <ul class="nav-left pull-left list-unstyled list-inline">
+                        <li class="sidebar-collapse divided-right">
+                            <a href="#" class="collapse-sidebar">
+                                <i class="fa fa-outdent"></i>
+                            </a>
+                        </li>
+                        <img class="brand" src="images/logo/logo_white_turq_200w.png">
+                    </ul>
+                     Left-side navigation end -->
+                     <!--<div class="menu-section">
+                        
+                     </div>-->
+
+
+                    <!-- Right-side navigation -->
+                    <div class="menu-section text-right" style='padding-right:2%'>
+                        <ul class="nav-right list-inline">
+                            <button class="btn-std success small-btn-text mr-15 waves-effect waves-teal" style="margin-top:6px">Create New Study</button>
+
+                            <li id="alertsDropDown" class="dropdown notifications">
+
+                                <a href class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="badge bg-lightred">3</span>
+                                </a>
+
+                                <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInDown">
+
+                                    <div class="panel-heading">
+                                        You have <strong>3</strong> notifications
+                                    </div>
+
+                                    <ul class="list-group">
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-danger">
+                                                    <i class="fa fa-ban"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">User Imrich cancelled account</span>
+                                                    <small class="text-muted">6 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-primary">
+                                                    <i class="fa fa-bolt"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">New user registered</span>
+                                                    <small class="text-muted">12 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <a href="#" class="media">
+                                                <span class="pull-left media-object media-icon bg-greensea">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                                <div class="media-body">
+                                                    <span class="block">User Robert locked account</span>
+                                                    <small class="text-muted">18 minutes ago</small>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="panel-footer">
+                                        <a href="#">Show all notifications <i class="fa fa-angle-right pull-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                        </ul>
+
+                        <div id="profileDropDown" class="dropdown nav-profile ml-15">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
+                                <div>Paramount</div> <i class="fa fa-angle-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu animated littleFadeInDown" role="menu">
+
+                                <li>
+                                    <a href="#">
+
+                                        <i class="fa fa-user"></i>Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog"></i>Settings
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i>Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    <!-- Right-side navigation end -->
+                    </div>
+
+
+                </header>
+
+            </section>
+            <!--/ HEADER Content  -->
+
+
+
+
+
+            <!-- =================================================
+            ================= FOCUS GROUP NAV  ===================
+            ================================================== -->
+            <div class="secondary-nav">
+
+                <div id="subLayerNav" class="sub-view-nav brand-horizontal-gradient open">
+                    <div class="go-back">
+                        <div class="back-arrow"></div>
+                        Study Setup
+                    </div>
+                    <div id="subLayerTitle" class="view-heading">Create Audience Segment
+                    </div>
+                </div>
+             
+
+                <div class="menu-section text-left">
+                    <ul class="group-sections ">
+                        <li id="publishSection"><div>Publish</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="dataSection"><div>Insights Dashboard</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div><div class="menu-section text-right">
+                    <ul class="group-sections">
+                        <li id="mediaSection" class="selected" role="sub-layer"><div>Videos & Images</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="surveySection" role="sub-layer"><div>Surveys</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                        <li id="segmentSection" role="sub-layer"><div>Target Audiences</div>
+                            <div class="hover-underline"></div>
+                        </li>
+                    </ul>
+                </div>
+                
+               
+
+            </div>
+            <!--/ FOCUS GROUP NAV-->
+
+
+
+
+            <!-- ====================================================
+            ================= CONTENT ===============================
+            ===================================================== -->
+            <section class="content" id="content">
+                <div class="side-nav">
+                </div>
+
+                <div class="page content-view">
+
+                    <!-- page content -->
+                    <div class="pagecontent">
+
+                        <!--<div class="action-row">
+                            -->
+                            <div class="segment-area">
+
+                                
+
+                                    <!--<div class="view-title mb-20">
+                                        <h2>Create New Segment</h2>
+                                        define the type of viewers you want feedback from
+                                    </div>-->
+
+                                    <form onsubmit="return false" class="metadata-form mb-30">
+                                        <div class="row">
+
+                                            <div class="form-group mb-30">
+                                                <label>Name your audience segment</label>
+                                                <input type="text" maxlength="60" style="width:93%;"/>
+                                            </div>
+
+                                            <div class="tile-body text-left">
+
+                                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                        <div class="section-title">
+                                                                            Gender <div class="attribute-label">- Male & Female</div>
+                                                                        </div>
+                                                                        <div class="button-area">
+                                                                            <div class="help-icon">
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                            </div>
+                                                                            <div class="open-icon">
+                                                                                <i class="fa fa-angle-up"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                                <div class="panel-body">
+                                                                    <div class="form-group mt-15 left-col">
+                                                                        <div class="btn-group">
+                                                                            <label class=" btn btn-default toggle-class active" data-toggle="active" data-type="radio">Both</label>
+                                                                            <label class=" btn btn-default toggle-class " data-toggle="active" data-type="radio">Male</label>
+                                                                            <label class=" btn btn-default toggle-class " data-toggle="active" data-type="radio">Female</label>
+                                                                        </div>
+                                                                    </div><div class="form-group mt-15 right-col text-right">
+                                                                        Quota 
+
+                                                                        <div class="illjs-toggle-switch default-bg-grey ml-10" data-toggle="toggled-on">
+                                                                            <div class="switch-track">
+                                                                                <div class="switch-knob knob-teal">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="switch-labels">
+                                                                                <div class="off-label">off</div><div class="on-label">on</div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="quota-form">
+
+                                                                        <div class="quota-title">
+                                                                            Set Gender Quota
+                                                                        </div>
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Male %</label>
+                                                                            <input type="text" maxlength="60"  style="width:20%;"/>
+                                                                        </div>
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Female %</label>
+                                                                            <input type="text" maxlength="60" class="display-inline" style="width:20%;"/>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        
+                                                                        <div class="section-title">
+                                                                            Age Range
+                                                                        </div>
+                                                                        
+                                                                        <div class="button-area">
+                                                                            <div class="help-icon">
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                            </div>
+                                                                            <div class="open-icon">
+                                                                                <i class="fa fa-angle-up"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="true">
+                                                                <div class="panel-body">
+                                                                    <div class="form-group mt-15 left-col">
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Minimum</label>
+                                                                            <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                        </div>
+
+                                                                        <div class="range-field-break">-</div>
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Maximum</label>
+                                                                            <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                        </div>
+
+                                                                    </div><div class="form-group mt-15 right-col text-right">
+                                                                        Quota 
+
+                                                                        <div class="illjs-toggle-switch default-bg-grey ml-10" data-toggle="toggled-on">
+                                                                            <div class="switch-track">
+                                                                                <div class="switch-knob knob-teal">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="switch-labels">
+                                                                                <div class="off-label">off</div><div class="on-label">on</div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="quota-form open">
+
+                                                                        <ul class="quota-settings mb-10">
+                                                                            <li>
+                                                                                <div class="form-group mb-0">
+                                                                                    <label class="display-inline mr-15 smallest-text">Age Range Quota</label>
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Minimum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+
+                                                                                    <div class="range-field-break" style="margin-left: -9px;">-</div>
+
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Maximum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="remove-button">
+                                                                                    <i class="fa fa-times-circle"></i>
+                                                                                </div>
+                                                                            </li>
+
+                                                                            <li class="add-setting">
+                                                                                <i class='fa fa-plus-circle mr-10'></i> Click to Add Age Quota
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        
+                                                                        <div class="section-title">
+                                                                            Income Range
+                                                                        </div>
+                                                                        
+                                                                        <div class="button-area">
+                                                                            <div class="help-icon">
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                            </div>
+                                                                            <div class="open-icon">
+                                                                                <i class="fa fa-angle-up"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                                <div class="panel-body">
+
+                                                                    <div class="form-group mt-15 left-col">
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Minimum</label>
+                                                                            <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                        </div>
+
+                                                                        <div class="range-field-break">-</div>
+
+                                                                        <div class="form-group form-width-3 display-inline">
+                                                                            <label class="display-inline mr-5">Maximum</label>
+                                                                            <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                        </div>
+
+                                                                        <div class="range-note smallest-text">
+                                                                            maximum value is not required
+                                                                            
+                                                                        </div>
+
+                                                                    </div><div class="form-group mt-15 right-col text-right">
+                                                                        Quota 
+
+                                                                        <div class="illjs-toggle-switch default-bg-grey ml-10" data-toggle="toggled-on">
+                                                                            <div class="switch-track">
+                                                                                <div class="switch-knob knob-teal">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="switch-labels">
+                                                                                <div class="off-label">off</div><div class="on-label">on</div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="quota-form">
+
+                                                                        <ul class="quota-settings mb-10">
+                                                                            <li>
+                                                                                <div class="form-group mb-0">
+                                                                                    <label class="display-inline mr-15 smallest-text">Income Range Quota</label>
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Minimum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+
+                                                                                    <div class="range-field-break" style="margin-left: -9px;">-</div>
+
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Maximum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="remove-button">
+                                                                                    <i class="fa fa-times-circle"></i>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="form-group mb-0">
+                                                                                    <label class="display-inline mr-15 smallest-text">Income Range Quota</label>
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Minimum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+
+                                                                                    <div class="range-field-break" style="margin-left: -9px;">-</div>
+
+                                                                                    <div class="form-group form-width-2 display-inline">
+                                                                                        <label class="display-inline mr-5">Maximum</label>
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:35%;"/>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="remove-button">
+                                                                                    <i class="fa fa-times-circle"></i>
+                                                                                </div>
+                                                                            </li>
+
+                                                                            <li class="add-setting">
+                                                                                <i class='fa fa-plus-circle mr-10'></i> Click to Add Income Quota
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                               
+                                                                </div>
+                                                            </div> 
+                                                        </div><!-- collapse hhi -->
+
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                                                        
+                                                                        <div class="section-title">
+                                                                            Viewing Device
+                                                                        </div>
+                                                                        
+                                                                        <div class="button-area">
+                                                                            <div class="help-icon">
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                            </div>
+                                                                            <div class="open-icon">
+                                                                                <i class="fa fa-angle-up"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                                <div class="panel-body">
+                                                                    
+                                                                    <div class="form-group mb-0">
+                                                                    <label>Choose allowed devices</label>
+                                                                    </div>
+
+                                                                    <div class="form-group mt-15 display-inline nowrap">
+                                                                        
+                                                                         <div class="btn-group">
+                                                                            <label class=" btn btn-default active" data-toggle="active" data-type="checkbox">Computer</label>
+                                                                            <label class=" btn btn-default " data-toggle="active" data-type="checkbox">Tablet</label>
+                                                                            <label class=" btn btn-default " data-toggle="active" data-type="checkbox">Smartphone</label>
+                                                                        </div>
+
+                                                                    </div><div class="form-group mt-15 display-inline form-width-3 text-right">
+                                                                        Quota 
+
+                                                                        <div class="illjs-toggle-switch default-bg-grey ml-10" data-toggle="toggled-on">
+                                                                            <div class="switch-track">
+                                                                                <div class="switch-knob knob-teal">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="switch-labels">
+                                                                                <div class="off-label">off</div><div class="on-label">on</div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="quota-form open">
+                                                                        <div class="quota-title mb-0 mt-20">
+                                                                            Set Device Viewership Quota
+                                                                        </div>
+                                                                        <ul class="quota-settings mb-10">
+                                                                            <li>
+                                                                                <div class="form-group mb-0">
+                                                                                    <div style="width:70%; display: inline-block; vertical-align: middle;">
+                                                                                        <div class="btn-group">
+                                                                                            <label class=" btn btn-default toggle-class active" data-toggle="active" data-type="radio">Computer</label>
+                                                                                            <label class=" btn btn-default toggle-class " data-toggle="active" data-type="radio">Tablet</label>
+                                                                                            <label class=" btn btn-default toggle-class " data-toggle="active" data-type="radio">Smartphone</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <label class="display-inline mr-10 smallest-text">device % </label>
+                           
+                                                                                        <input type="text" maxlength="2" class="text-center" style="width:7.9%;"/>
+                                                                                   
+                                                                                </div>
+
+                                                                                <div class="remove-button">
+                                                                                    <i class="fa fa-times-circle"></i>
+                                                                                </div>
+                                                                            </li>
+
+                                                                            <li class="add-setting mt-15">
+                                                                                <i class='fa fa-plus-circle mr-10'></i> Click to Device Quota
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                               
+                                                                </div>
+                                                            </div> 
+                                                        </div><!-- collapse device -->
+                                                        
+                                                        <div class="create-category">
+                                                            <i class='fa fa-plus-circle mr-10'></i> Create Custom Category
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+
+                                                </div><!-- /tile body -->
+
+                                                
+                                                <div class="button-row text-right ">
+                                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                                    <button class="btn-std success waves-effect waves-teal">Continue</button>
+                                                </div>
+                                            </div> <!-- row -->
+                                  </form>
+                                
+                            </div><!--Segment area -->
+
+
+                    </div>    
+
+
+
+                </div>
+
+            </section>
+            <!--/ CONTENT -->
+
+        <div class="modal in" role="dialog" style="display: none;background:rgba(0,0,0,.8)"><div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create New Viewer Study</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-sm-6 control-label">Name of Study</label>
+                         <div class="col-sm-12 mb-20">
+                            <input type="text" placeholder="Title">
+                        </div>
+                        <div class="left-col">
+                            <label class="col-sm-6 control-label">Number of Completes</label>
+                            <div class="col-sm-12 mb-20">
+                                <input type="text" placeholder="Enter survey name">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <label class="col-sm-6 control-label">Length of Study</label>
+                            <div class="col-sm-12 mb-20">
+                                <input type="text" placeholder="Enter survey name">
+                            </div>
+                        </div>
+                        
+                        <!--<label class="col-sm-6 control-label">Notes (200 char max)</label>
+                        <div class="col-sm-12 mb-20">
+                            <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself some notes here if needed">
+                            </textarea>
+                        </div>-->
+
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="text-right">
+                        <div role="cancel" type="button" class="btn-std light-color-btn waves-effect waves-dark-light">Cancel</div>
+                        <div role="confirm" type="button" class="btn-std success waves-effect waves-teal">Save and Continue</div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+
+        </div>
+        <!--/ Application Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ============================================
+        ============== Vendor JavaScripts ===============
+        ============================================= -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="assets/js/vendor/materialize/materialize.js"></script>
+
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script src="assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+        <script src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+        <script src="assets/js/vendor/screenfull/screenfull.min.js"></script>
+
+        <script src="assets/js/vendor/parsley/parsley.min.js"></script>
+
+        <script src="assets/js/vendor/filestyle/bootstrap-filestyle.min.js"></script>
+
+        <script src="assets/js/vendor/form-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+        <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+        <!--/ vendor javascripts -->
+
+
+
+
+        <!-- ============================================
+        ============== Custom JavaScripts ===============
+        ============================================= -->
+        <script src="assets/js/main.js"></script>
+        <!--/ custom javascripts -->
+
+
+
+
+
+
+        <!-- ===============================================
+        ============== Page Specific Scripts ===============
+        ================================================ -->
+        <script>
+
+        $('body').addClass('secondary-nav-open');
+             //:NOTE:: required code for the custom radio/checkboxes field
+  $('.btn-group label').on('click', function(){
+    var element = $(this),
+        className = element.data('toggle'),
+        type = element.data('type');
+
+    if (type === 'radio') {
+      element.parent().find('.'+className).removeClass(className);
+    }
+
+    if (element.hasClass(className)) {
+      element.removeClass(className);
+    } else {
+      element.addClass(className);
+    }
+  });
+
+  /* illjs toggle switch */
+    $('.illjs-toggle-switch').on('click', function(){
+        var element = $(this),
+        className = element.data('toggle')
+
+        if (element.hasClass(className)) {
+           element.removeClass(className);
+           element.parent().parent().find('.quota-form').removeClass('open')
+        } else {
+          element.addClass(className);
+          element.parent().parent().find('.quota-form').addClass('open')
+        }
+    });
+
+ 
+    //:NOTE:: require code for the select dropdown styling
+  $('.chosen-select').each(function() {
+    var element = $(this);
+    element.on('chosen:ready', function(e, chosen) {
+      var width = element.css("width");
+      var placeholder = (element.attr('placeholder')) ? element.attr('placeholder') : "Select Options";
+      if(element.hasClass('single-line')){
+         element.next().addClass('single-line')
+      }
+      element.next().find('.chosen-choices').addClass('form-control');
+      element.next().css("width", "100%")
+      //element.next().find('.search-field input').attr('value',placeholder);
+    }).chosen();
+  });
+        </script>
+        <!--/ Page Specific Scripts -->
+
+
+
+
+
+
+    </body>
+</html>
