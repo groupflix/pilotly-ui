@@ -1,0 +1,9 @@
+/*==== WELCOME FLOW CSS ======*/
+/* added welcome area to some classes in pilotly.v2 to consolidate */
+
+.welcome-area form[class^="metadata"] .form-group .btn-group{
+    width:100%;
+}
+.welcome-area form[class^="metadata"] .form-group .btn-group label{
+        padding: 0 6.3%;
+}

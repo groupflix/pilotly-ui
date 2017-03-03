@@ -578,6 +578,67 @@
                 </div>
             </div>
 
+
+            <!-- CREATE VIEWER STUDY -->
+            <div class="modal in" role="dialog" style="display:none;background:rgba(0,0,0,.8)"><div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="upper-right-close">x</div>
+                        <h3 class="modal-title">Create New Viewer Study</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group mb-25">
+                            <label>Name of series or campaign this study relates to</label>
+                            <input type="text" maxlength="80">
+                        </div>
+                        <div class="form-group mb-25">
+                            <label>Study name <span>(visible by panelists)</span></label>
+                            <input type="text" maxlength="100">
+                        </div>
+                        <div class="form-group mb-30">
+                            <label>What type of study is this?</label>
+                            <div class="btn-group">
+                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">TV Series</label>
+                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">Web Series</label>
+                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Film</label>
+                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Promo + Ad</label>
+                            </div>
+                        </div>
+                        <div class="form-group mb-25">
+                            <div class="left-col">
+                                <label>Estimated survey length <span>(min)</span></label>
+                                <input type="number" maxlength="3" class="text-center" style="width:60%">
+                            </div><div class="right-col">
+                            
+                                <label>Days in field</label>
+                                <input type="number" maxlength="2" class="text-center" style="width:60%">
+                            </div>
+                        </div>
+                        <div class="form-group mb-25">
+                            <div class="left-col">
+                                <label>Completes Goal</label>
+                                <input type="number" maxlength="4" class="text-center" style="width:60%">
+                            </div><div class="right-col">
+                                <label>Panelist Source</label>
+                                <div class="btn-group">
+                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">Pilotly</label>
+                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">My Own Panel</label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="text-right">
+                            <div role="cancel" type="button" class="btn-std light-color-btn waves-effect waves-dark-light mr-15">Cancel</div>
+                            <div id="close-modal" role="confirm" type="button" class="btn-std success waves-effect waves-teal">Save and Continue</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
             <!-- ADD IMAGE -->
             <div class="modal image-library in no-footer" role="dialog" style="display:block;background:rgba(0,0,0,.8)">
                 <div class="modal-dialog">
