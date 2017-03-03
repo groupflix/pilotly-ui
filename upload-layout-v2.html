@@ -35,6 +35,7 @@
         <!-- project main css files -->
         <link rel="stylesheet" href="assets/css/main.v2.css">
         <link rel="stylesheet" href="assets/css/pilotly.v2.css">
+        <link rel="stylesheet" href="assets/css/upload.video.css">
         <!--/ stylesheets -->
 
 
@@ -726,6 +727,59 @@
                             </div>
 
 
+                            <!-- VIEW/EDIT -->
+                            <div class="detail-area video-type relwidth" style="display: block">
+
+                                <div class="scene-player mb-20" style="background: black">
+                                    <!--<iframe class="filldims width-100p" > -->
+                                </div>
+
+                                <div class="form-group text-center mb-20">
+                                   
+                                    <button class="btn-std success waves-effect waves-teal" style="width:100%">Edit Scenes</button>
+
+                                </div>
+
+                                <form onsubmit="return false" class="metadata-form mb-40">
+                                    <div class="row mb-0">
+                                                                              
+                                        <div class="form-group">
+                                            <label>Name of Video</label>
+                                            <input type="text" maxlength="50" style="width:93%"/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="name-upload">
+                                                <label>Caption File</label>
+                                                <input type="text" maxlength="50" style="width:90%" disabled="disabled"/>
+                                            </div>
+                                            <div class="upload-button">
+                                                <button class="btn-std light-color-btn waves-effect waves-dark-blue no-bg small-action-btn">Add Captions</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>MPAA Rating</label>
+                                            <div class="btn-group">
+                                                <label class="btn btn-default toggle-class active" data-toggle="active" data-type="radio">TV-G</label>
+                                                <label class="btn btn-default toggle-class " data-toggle="active" data-type="radio">TV-PG</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">TV-14</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">TV-MA</label>
+                                                <label class="btn btn-default toggle-class" data-toggle="active" data-type="radio">Not Rated</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                                <div class="button-row text-right">
+                                    <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Go Back</button>
+                                    <button class="btn-std success waves-effect waves-teal">Save Changes</button>
+                                </div>
+
+
+                            </div>
+
 
                             <!-- SCENE EDIT -->
                             <div class="scene-area relwidth" style="display: none">
@@ -844,7 +898,7 @@
                         </div>
                         
                          <!-- UPLOAD VIDEO OR IMAGE LIST -->
-                        <ul id="videoItems" class="item-list media-upload" style="display: block;" >
+                        <ul id="videoItems" class="item-list media-upload" style="display: none;" >
                             <!--<li class="menu-item create-item waves-effect waves-teal">
                                 <div class="top-area">
                                     <i class="fa fa-plus"></i>
