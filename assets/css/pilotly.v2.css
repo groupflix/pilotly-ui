@@ -4155,7 +4155,7 @@ button.btn-std[disabled='disabled']{
         font-style: italic;
       }
 
-.pagecontent form[class^="metadata"] .form-group label, .modal .form-group label{
+.pagecontent form[class^="metadata"] .form-group label, .modal .form-group label,.profile-edit .form-group label{
   display: block;
   font-size: 14px;
   color: #5a5a5a;
@@ -4174,7 +4174,7 @@ button.btn-std[disabled='disabled']{
  
 }
 
-.pagecontent form[class^="metadata"] .form-group input,.modal .form-group input, .scene-area .scene-player-panel .form-group input{
+.pagecontent form[class^="metadata"] .form-group input,.modal .form-group input, .scene-area .scene-player-panel .form-group input,.profile-edit .form-group input{
   border: 1px solid #b3b2b2;
   height: 2rem;
 }

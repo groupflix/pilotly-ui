@@ -424,7 +424,7 @@
                                          END OF : Edit Your Information Link -->
 
 
-                                         <!-- Display Your Information Link -->
+                                         <!-- Display Your Information Link
                                         <div class="profile-edit float-box-shadow">
                                             <h3>Profile Information</h3>
                                             <form onsubmit="return false" class="metadata-form">
@@ -458,7 +458,7 @@
                                             </form>
                                            
                                         </div>
-                                        <!-- END OF : Display Your Information Link -->
+                                       END OF : Display Your Information Link -->
 
 
 
@@ -562,6 +562,126 @@
                                      END OF : Edit Your Information Link -->
 
 
+
+                                     <!-- Display Team Manager
+                                        <div class="profile-edit list-contained float-box-shadow">
+
+                                            <div class="row">
+                                                <div class="col-md-12 pl-0"><h3>Team Settings</h3></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 pl-0">Manage Team</div>
+                                            </div>
+
+                                            <ul class="team-list mb-40">
+
+                                                <li class="row current">
+                                                   <div class="col-lg-2 avatar pl-0 pr-0">
+                                                        <img src="images/avatar-default.png">
+                                                   </div>
+                                                   <div class="col-md-5 user-info">
+                                                        Howie Norman<br>
+                                                        <span>akim@nbcuniversal.com</span>
+                                                   </div>
+                                                   <div class="col-md-5 permissions">
+                                                        Your Role : <span> Admin </span>
+                                                   </div>
+                                                </li>
+
+                                                <li class="row">
+                                                   <div class="col-lg-2 avatar pl-0 pr-0">
+                                                        <img src="images/avatar-default.png">
+                                                   </div>
+                                                   <div class="col-md-5 user-info">
+                                                        Adrian Kim<br>
+                                                        <span>akim@nbcuniversal.com</span>
+                                                   </div>
+                                                   <div class="col-md-5 permissions">
+                                                        <div class="relwidth">
+                                                            <select  tabindex="-1" class="chosen-select single-line" style="width:85.5%">
+                                                                <option value="AK" selected>Admin</option>
+                                                                <option value="HI">Analyst</option>
+                                                                <option value="CA">Manager</option>
+                                                                <option value="NV">Remove User</option>
+                                                            </select>
+                                                        </div>
+                                                   </div>
+                            
+                                                </li>
+
+                                            </ul>
+
+
+                                            <div class="row invite-members mb-15">
+
+                                                <div class="col-md-12 pl-0 mb-10">Invite New Member</div>
+
+                                                <div class="col-md-12 pl-0 pr-0">
+                                                    <div class="col-md-8 pl-0">
+                                                        <div class="form-group">
+                                                            <label>Email</label>
+                                                            <input type="text" maxlength="18" value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 send-invite pl-0">
+                                                        <div class="form-group hide-sent-msg">
+                                                              <label>Invite Sent</label>
+                                                             <button class="btn-std success small-btn-text waves-effect waves-teal">Send Invite</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                       END OF : Team Manager -->
+
+
+
+                                       <!-- Display Service Plan  -->
+                                        <div class="profile-edit list-contained float-box-shadow">
+
+                                            <div class="row">
+                                                <div class="col-md-12 pl-0"><h3>Manage Subscription</h3></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 pl-0">Current Plan</div>
+                                            </div>
+
+                                            <div class="row active current-plan mb-40">
+                                                <div class="col-md-12 pl-0"> 
+                                                    <label>Account Status</label>
+                                                    Free Trial, expire in 365 days
+                                                </div>
+                                                <div class="col-md-12 pl-0"> 
+                                                    <label>Service Plan</label>
+                                                    Basic Research
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-12 pl-0">Last 3 Transactions</div>
+                                            </div>
+
+                                            <ul class="invoice-list">
+                                                <li class="row mb-0"> 
+                                                    <div class="col-md-6 pl-0 description">February Service Plan</div>
+                                                    <div class="col-md-3 pl-0">Invoice</div>
+                                                    <div class="col-md-3 pl-0 text-right">$3000.00</div>
+                                                </li>
+                                                <li class="row mb-0"> 
+                                                    <div class="col-md-6 pl-0 description">January Service Plan</div>
+                                                    <div class="col-md-3 pl-0">Invoice</div>
+                                                    <div class="col-md-3 pl-0 text-right">$3000.00</div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                       <!-- END OF : Service Plans -->
+
+
                                     </div>
                                 </div>
                                 
@@ -577,47 +697,7 @@
             </section>
             <!--/ CONTENT -->
 
-        <div class="modal in" role="dialog" style="display: none;background:rgba(0,0,0,.8)"><div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Create New Viewer Study</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <label class="col-sm-6 control-label">Name of Study</label>
-                         <div class="col-sm-12 mb-20">
-                            <input type="text" placeholder="Title">
-                        </div>
-                        <div class="left-col">
-                            <label class="col-sm-6 control-label">Number of Completes</label>
-                            <div class="col-sm-12 mb-20">
-                                <input type="text" placeholder="Enter survey name">
-                            </div>
-                        </div>
-                        <div class="right-col">
-                            <label class="col-sm-6 control-label">Length of Study</label>
-                            <div class="col-sm-12 mb-20">
-                                <input type="text" placeholder="Enter survey name">
-                            </div>
-                        </div>
-                        
-                        <!--<label class="col-sm-6 control-label">Notes (200 char max)</label>
-                        <div class="col-sm-12 mb-20">
-                            <textarea type="text" rows="2" class="form-control" maxlength="200" placeholder="Leave yourself some notes here if needed">
-                            </textarea>
-                        </div>-->
-
-                    </div>
-                </div>
-                
-                <div class="modal-footer">
-                    <div class="text-right">
-                        <div role="cancel" type="button" class="btn-std light-color-btn waves-effect waves-dark-light">Cancel</div>
-                        <div role="confirm" type="button" class="btn-std success waves-effect waves-teal">Save and Continue</div>
-                    </div>
-                </div>
-              </div>
-        </div>
+      
 
 
         </div>
