@@ -382,8 +382,43 @@
                                     <div class="col-md-8 pr-0">
 
 
-                                         <!-- Edit Your Information Link 
-                                        <div class="profile-edit float-box-shadow">
+                                         <!-- Display Your Information Link -->
+                                        <div class="profile-edit float-box-shadow" style="display: block">
+                                            <h3>Profile Information</h3>
+                                            <form onsubmit="return false" class="metadata-form">
+                                                <div class="row">
+
+                                                    <div class="form-group mb-20">
+                                                        <label>Name</label>
+                                                        <div class="input-value">Howie Norman</div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group mb-20 text-left">
+                                                         <label>Company</label>
+                                                        <div class="input-value">NBC Universal</div>
+                                                    </div>
+
+                                                    <div class="form-group mb-20 text-left">
+                                                        <label>Email</label>
+                                                        <div class="input-value">illycut@gmail.com</div>
+                                                    </div>
+
+                                                    <div class="form-group mb-20 text-left">
+                                                        <label>Password</label>
+                                                        <input type="password" maxlength="50" class="input-value" style="width:91%;" value="jnorman@pilot.ly"/>
+                                                    </div>
+                                                    
+                                                    <div class="button-row text-right">
+            
+                                                        <button class="btn-std small-btn-text thin-padding success waves-effect waves-teal">Edit</button>
+                                                    </div>
+                                                </div> 
+                                            </form>
+                                           
+                                        </div>
+
+                                         <!-- Edit Your Information Link -->
+                                        <div class="profile-edit float-box-shadow" style="display: none">
                                             <h3>Edit Information</h3>
                                             <form onsubmit="return false" class="metadata-form">
                                                 <div class="row">
@@ -421,150 +456,10 @@
                                             </form>
                                            
                                         </div>
-                                         END OF : Edit Your Information Link -->
 
 
-                                         <!-- Display Your Information Link
-                                        <div class="profile-edit float-box-shadow">
-                                            <h3>Profile Information</h3>
-                                            <form onsubmit="return false" class="metadata-form">
-                                                <div class="row">
-
-                                                    <div class="form-group mb-20">
-                                                        <label>Name</label>
-                                                        <div class="input-value">Howie Norman</div>
-                                                    </div>
-                                                    
-                                                    <div class="form-group mb-20 text-left">
-                                                         <label>Company</label>
-                                                        <div class="input-value">NBC Universal</div>
-                                                    </div>
-
-                                                    <div class="form-group mb-20 text-left">
-                                                        <label>Email</label>
-                                                        <div class="input-value">illycut@gmail.com</div>
-                                                    </div>
-
-                                                    <div class="form-group mb-20 text-left">
-                                                        <label>Password</label>
-                                                        <input type="password" maxlength="50" class="input-value" style="width:91%;" value="jnorman@pilot.ly"/>
-                                                    </div>
-                                                    
-                                                    <div class="button-row text-right">
-            
-                                                        <button class="btn-std small-btn-text thin-padding success waves-effect waves-teal">Edit</button>
-                                                    </div>
-                                                </div> 
-                                            </form>
-                                           
-                                        </div>
-                                       END OF : Display Your Information Link -->
-
-
-
-                                        <!-- Display Payment Methods Link 
-                                        <div class="profile-edit list-contained float-box-shadow">
-                                            <h3>Payment Methods</h3>
-                                            <ul class="payment-methods mb-15">
-
-                                                <li class="primary">
-                                                    <div class="card-type">
-                                                        <img src="https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production">
-                                                    </div>
-                                                    <div class="card-number">
-                                                        x2655<br>
-                                                        <span>exp 04/17</span>
-                                                    </div>
-                                                    <div class="card-status">
-                                                        <div class="primary-card">Primary</div>
-                                                        <div class="set-card">make default</div>
-                                                        <div class="expired-card">Expired</div>
-                                                        <div class="invalid-card">Invalid</div>
-                                                    </div>
-                                                    <div class="method-action">
-                                                        <button class="btn-std small-btn-text thin-padding light-color-btn waves-effect waves-dark-light no-bg mr-10">Edit</button>
-                                                        <button class="btn-std small-btn-text thin-padding no-bg light-color-btn waves-effect waves-red"><i class="fa fa-trash"></i></button>
-                                                    </div>
-                                                </li>
-
-                                                <li class="default">
-                                                    <div class="card-type">
-                                                        <img src="https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production">
-                                                    </div>
-                                                    <div class="card-number">
-                                                        x2655<br>
-                                                        <span>exp 04/17</span>
-                                                    </div>
-                                                    <div class="card-status">
-                                                        <div class="primary-card">Primary</div>
-                                                        <div class="set-card">set primary</div>
-                                                        <div class="invalid-card">Expired</div>
-                                                        <div class="failed-card">Failed Payment</div>
-                                                    </div>
-                                                    <div class="method-action">
-                                                        <button class="btn-std small-btn-text thin-padding light-color-btn waves-effect waves-dark-light no-bg mr-10">Edit</button>
-                                                        <button class="btn-std small-btn-text thin-padding no-bg light-color-btn waves-effect waves-red"><i class="fa fa-trash"></i></button>
-                                                    </div>
-                                                </li>
-
-                                                <li class="add-card">
-                                                     <i class='fa fa-plus-circle mr-10'></i> Add New Method
-                                                </li>
-
-                                            </ul>
-
-                                        </div>
-                                        END OF : Display Payment Methods Link -->
-
-
-                                        <!-- Edit Your Payment Method Link 
-                                        <div class="profile-edit list-contained float-box-shadow">
-                                            <h3>Update Credit Card</h3>
-                                            <form onsubmit="return false" class="metadata-form edit-payment">
-                                                <div class="row">
-
-                                                    <div class="form-group mb-20">
-                                                        <div class="form-width-6 display-inline">
-                                                            <label>Card Number</label>
-                                                            <input type="text" maxlength="18" value="xxxxxxxxxxxx5453"/>
-                                                        </div><div class="form-width-3 display-inline">
-                                                        
-                                                            <label>Card Type</label>
-                                                            <div class="cc-group"><i id="visaIcon" class="fa fa-cc-visa" style="opacity: 0.5;"></i><i id="mcIcon" class="fa fa-cc-mastercard" style="opacity: 0.5;"></i><i id="amexIcon" class="fa fa-cc-amex" style="opacity: 0.5;"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="form-group mb-40">
-                                                        <div class="form-width-3  display-inline">
-                                                            <label>Exp</label>
-                                                            <input type="text" maxlength="60" style="width:52%;" placeholder="MM/YY"/>
-                                                        </div>
-                                                        
-                                                        <div class="form-width-2 mr-20 display-inline">
-                                                            <label>CCV</label>
-                                                            <input type="text" maxlength="4" style="width:50%;"/>
-                                                        </div>
-                                                        <div class="form-width-3  display-inline">
-                                                            <label>Zipcode</label>
-                                                            <input type="text" maxlength="5" style="width:70%;" placeholder=""/>
-                                                        </div>
-                                                    </div>
-
-                                                        
-                                                    <div class="button-row text-right ">
-                                                        <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Cancel</button>
-                                                        <button class="btn-std success waves-effect waves-teal">Save Changes</button>
-                                                    </div>
-                                                </div> 
-                                            </form>
-                                           
-                                        </div>
-                                     END OF : Edit Your Information Link -->
-
-
-
-                                     <!-- Display Team Manager
-                                        <div class="profile-edit list-contained float-box-shadow">
+                                     <!-- Display Team Manager -->
+                                        <div class="profile-edit list-contained float-box-shadow" style="display: none">
 
                                             <div class="row">
                                                 <div class="col-md-12 pl-0"><h3>Team Settings</h3></div>
@@ -632,14 +527,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                       END OF : Team Manager -->
 
 
 
                                        <!-- Display Service Plan  -->
-                                        <div class="profile-edit list-contained float-box-shadow">
+                                        <div class="profile-edit list-contained float-box-shadow" style="display: none">
 
                                             <div class="row">
                                                 <div class="col-md-12 pl-0"><h3>Manage Subscription</h3></div>
@@ -679,7 +572,105 @@
                                             </ul>
 
                                         </div>
-                                       <!-- END OF : Service Plans -->
+
+
+                                        <!-- Display Payment Methods Link -->
+                                        <div class="profile-edit list-contained float-box-shadow" style="display: none">
+                                            <h3>Payment Methods</h3>
+                                            <ul class="payment-methods mb-15">
+
+                                                <li class="primary">
+                                                    <div class="card-type">
+                                                        <img src="https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production">
+                                                    </div>
+                                                    <div class="card-number">
+                                                        x2655<br>
+                                                        <span>exp 04/17</span>
+                                                    </div>
+                                                    <div class="card-status">
+                                                        <div class="primary-card">Primary</div>
+                                                        <div class="set-card">make default</div>
+                                                        <div class="expired-card">Expired</div>
+                                                        <div class="invalid-card">Invalid</div>
+                                                    </div>
+                                                    <div class="method-action">
+                                                        <button class="btn-std small-btn-text thin-padding light-color-btn waves-effect waves-dark-light no-bg mr-10">Edit</button>
+                                                        <button class="btn-std small-btn-text thin-padding no-bg light-color-btn waves-effect waves-red"><i class="fa fa-trash"></i></button>
+                                                    </div>
+                                                </li>
+
+                                                <li class="default">
+                                                    <div class="card-type">
+                                                        <img src="https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=production">
+                                                    </div>
+                                                    <div class="card-number">
+                                                        x2655<br>
+                                                        <span>exp 04/17</span>
+                                                    </div>
+                                                    <div class="card-status">
+                                                        <div class="primary-card">Primary</div>
+                                                        <div class="set-card">set primary</div>
+                                                        <div class="invalid-card">Expired</div>
+                                                        <div class="failed-card">Failed Payment</div>
+                                                    </div>
+                                                    <div class="method-action">
+                                                        <button class="btn-std small-btn-text thin-padding light-color-btn waves-effect waves-dark-light no-bg mr-10">Edit</button>
+                                                        <button class="btn-std small-btn-text thin-padding no-bg light-color-btn waves-effect waves-red"><i class="fa fa-trash"></i></button>
+                                                    </div>
+                                                </li>
+
+                                                <li class="add-card">
+                                                     <i class='fa fa-plus-circle mr-10'></i> Add New Method
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+
+
+                                        <!-- Edit Your Payment Method Link -->
+                                        <div class="profile-edit list-contained float-box-shadow" style="display: none">
+                                            <h3>Update Credit Card</h3>
+                                            <form onsubmit="return false" class="metadata-form edit-payment">
+                                                <div class="row">
+
+                                                    <div class="form-group mb-20">
+                                                        <div class="form-width-6 display-inline">
+                                                            <label>Card Number</label>
+                                                            <input type="text" maxlength="18" value="xxxxxxxxxxxx5453"/>
+                                                        </div><div class="form-width-3 display-inline">
+                                                        
+                                                            <label>Card Type</label>
+                                                            <div class="cc-group"><i id="visaIcon" class="fa fa-cc-visa" style="opacity: 0.5;"></i><i id="mcIcon" class="fa fa-cc-mastercard" style="opacity: 0.5;"></i><i id="amexIcon" class="fa fa-cc-amex" style="opacity: 0.5;"></i></div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group mb-40">
+                                                        <div class="form-width-3  display-inline">
+                                                            <label>Exp</label>
+                                                            <input type="text" maxlength="60" style="width:52%;" placeholder="MM/YY"/>
+                                                        </div>
+                                                        
+                                                        <div class="form-width-2 mr-20 display-inline">
+                                                            <label>CCV</label>
+                                                            <input type="text" maxlength="4" style="width:50%;"/>
+                                                        </div>
+                                                        <div class="form-width-3  display-inline">
+                                                            <label>Zipcode</label>
+                                                            <input type="text" maxlength="5" style="width:70%;" placeholder=""/>
+                                                        </div>
+                                                    </div>
+
+                                                        
+                                                    <div class="button-row text-right ">
+                                                        <button class="btn-std light-color-btn waves-effect waves-dark-light no-bg mr-10">Cancel</button>
+                                                        <button class="btn-std success waves-effect waves-teal">Save Changes</button>
+                                                    </div>
+                                                </div> 
+                                            </form>
+                                        </div>
+
 
 
                                     </div>
