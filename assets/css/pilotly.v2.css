@@ -3171,7 +3171,7 @@ ul.side-subnav{
     /*overflow:hidden;*/
   }
 
-  .pagecontent .segment-area,.pagecontent .welcome-area, .pagecontent .action-area,.pagecontent .publish-area,.pagecontent .detail-area,.pagecontent .scene-area{
+  .pagecontent .segment-area,.pagecontent .profile-area,.pagecontent .welcome-area, .pagecontent .action-area,.pagecontent .publish-area,.pagecontent .detail-area,.pagecontent .scene-area{
     position:relative;
 
     min-height: 250px; min-width: 500px; height: auto;
@@ -3204,7 +3204,7 @@ ul.side-subnav{
     width:600px;
   }
 
-  .pagecontent .publish-area.wider{
+  .pagecontent .publish-area.wider,.pagecontent .profile-area{
      width:700px;
   }
 
@@ -3961,6 +3961,16 @@ button.btn-std[disabled='disabled']{
 
   .form-width-4{
     width:40%;
+    vertical-align: middle;
+  }
+
+  .form-width-6{
+    width:60%;
+    vertical-align: middle;
+  }
+
+  .form-width-5{
+    width:49.9%;
     vertical-align: middle;
   }
 
